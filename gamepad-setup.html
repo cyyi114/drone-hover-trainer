@@ -6,17 +6,17 @@
     <title>手把設定｜四面停懸訓練模擬器</title>
     <link rel="icon" href="data:," />
     <style>:root{--lightningcss-light: ;--lightningcss-dark:initial;color-scheme:dark;--bg:#101214;--panel:#181b1f;--line:#2b3036;--text:#e6e8ea;--muted:#a9b0b6;--accent:#2bb3a3}body{background:var(--bg);color:var(--text);margin:0;font:15px/1.6 system-ui,Microsoft JhengHei,sans-serif}main{max-width:1080px;margin:0 auto;padding:24px 16px 48px}h1{margin:0 0 8px;font-size:22px}h2{margin:0 0 8px;font-size:16px}p{margin:0 0 12px}.muted{color:var(--muted)}section{background:var(--panel);border:1px solid var(--line);border-radius:8px;margin-top:20px;padding:16px}#setup-connection{border:1px dashed var(--accent);border-radius:8px;padding:12px;font-size:16px}#setup-raw-axes{font-variant-numeric:tabular-nums;color:var(--muted)}table{border-collapse:collapse;width:100%}th,td{border-bottom:1px solid var(--line);text-align:left;padding:6px 8px;font-weight:400}thead th{color:var(--muted)}input[type=number]{width:5.5em}input,select,button{font:inherit;color:var(--text);border:1px solid var(--line);background:#20242a;border-radius:6px;padding:4px 8px}button{cursor:pointer;margin:0 8px 8px 0}button:hover,select:hover,input:hover{border-color:var(--accent)}output{font-variant-numeric:tabular-nums}#setup-said,#setup-buttons-said{min-height:1.6em;color:var(--accent)}[data-field=warning]{color:#f2b24c}a{color:var(--accent)}</style>
-    <script type="module" crossorigin src="./assets/gamepad-setup-BdMh-IT6.js"></script>
+    <script type="module" crossorigin src="./assets/gamepad-setup-D3dnrAfW.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-P2Xu9kJm.js">
-    <link rel="modulepreload" crossorigin href="./assets/gamepadText-BvtZ80yg.js">
+    <link rel="modulepreload" crossorigin href="./assets/gamepadText-hYeHPn19.js">
     <link rel="modulepreload" crossorigin href="./assets/notRecorded-U8o28lkj.js">
     <link rel="modulepreload" crossorigin href="./assets/gamepadProbe-PwRmJIUH.js">
-    <link rel="modulepreload" crossorigin href="./assets/gamepadSource-iPelOZo2.js">
+    <link rel="modulepreload" crossorigin href="./assets/gamepadSource-Dyqhi6r0.js">
   </head>
   <body>
     <main>
       <h1>手把設定</h1>
-      <p class="muted">實體手把的設定存在這個瀏覽器裡。改好後回到<a href="./">飛行頁</a>按 R 開新回合，不會在飛到一半時換手。</p>
+      <p class="muted">第一次使用會採用訓練手把配置（美國手）。已儲存的個人設定不會被覆蓋。改好後回到<a href="./">飛行頁</a>按 R 開新回合，不會在飛到一半時換手。</p>
       <section aria-label="搖桿模式">
         <h2><label for="setup-stick-mode">搖桿模式</label></h2>
         <select id="setup-stick-mode">
@@ -33,7 +33,7 @@
         <p id="setup-connection">準備中…</p>
         <p id="setup-raw-axes"></p>
         <p id="setup-notice" class="muted"></p>
-        <p><a href="./gamepad-settings-1209-4f54.json" download>下載訓練手把配置（JSON）</a>。這份配置供對照，下載不會更改目前設定。</p>
+        <p><a href="./gamepad-settings-1209-4f54.json" download>下載訓練手把配置（JSON）</a>。這是本站的預設配置。要重新套用，按下方「還原成預設配置」。</p>
       </section>
 
       <section aria-label="對應與校正">
@@ -58,7 +58,7 @@
         <p style="margin-top: 12px">
           <button type="button" id="setup-center">把現在的位置設成中心</button>
           <button type="button" id="setup-range">記錄行程</button>
-          <button type="button" id="setup-reset">還原成標準對應</button>
+          <button type="button" id="setup-reset">還原成預設配置</button>
         </p>
         <p id="setup-said" role="status" aria-live="polite"></p>
       </section>
