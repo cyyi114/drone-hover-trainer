@@ -1,15 +1,15 @@
 {
   "formatVersion": 1,
-  "version": "0.0.0+d09a490",
-  "sourceCommit": "d09a4908bfad2c1a8455a253b3ef015cba6e41b6",
-  "builtAt": "2026-11-19T11:03:41.948Z",
+  "version": "0.0.0+ca7c88a",
+  "sourceCommit": "ca7c88a656fa4dca7338e6583019304f6fbbdccb",
+  "builtAt": "2026-11-19T11:26:48.299Z",
   "dropRejectedBackdrops": true,
   "droppedBackdrops": [
     "hausdorf-clear",
     "suburban-field"
   ],
   "fileCount": 87,
-  "totalBytes": 125771279,
+  "totalBytes": 125772027,
   "files": [
     {
       "path": ".nojekyll",
@@ -24,12 +24,12 @@
     {
       "path": "LICENSES.html",
       "bytes": 5759,
-      "sha256": "010e19c5c33e470443dd90cb60a26807327a5c7070489ab35333d29e12b70073"
+      "sha256": "e28ff5c82ea2799b18d232fc850f0d80dd117ba960751a2b14826a7f3edff067"
     },
     {
       "path": "README.md",
       "bytes": 527,
-      "sha256": "2b216aa319f7cdda65648a58d25d8b5e124107810b5c5bce3ffbde8b3c951414"
+      "sha256": "57bcf0730b082ebbb935bcf88afdca1ec01a3391afb41693425105608d349381"
     },
     {
       "path": "airframe/cad-hex-1.glb",
@@ -87,9 +87,9 @@
       "sha256": "d860d9ff8d61d4f4ff8dbfa810540dfc174dfc3f34abd22084f34ecbe304545f"
     },
     {
-      "path": "assets/buildInfo-BOvAN2k-.js",
+      "path": "assets/buildInfo-D20VVj-8.js",
       "bytes": 37,
-      "sha256": "f4e875738a855144a0057697a7f47965f6b90599e1c0579c1e70414e1008eab8"
+      "sha256": "e8c68ec0d9e157617dae7e75d9a72dcc0fbc5b57bb1b30cf538370f683e309d8"
     },
     {
       "path": "assets/canvasSize-BfUx9E42.js",
@@ -102,9 +102,9 @@
       "sha256": "08df22f4696080e3ec7721abea253e40b0d479e49fa797c52133e20b36fcc0ed"
     },
     {
-      "path": "assets/drill-DmrOcYy5.js",
-      "bytes": 21992,
-      "sha256": "29bfde9dd08ae0e98e4f75a580c815fc244e2ef3b491e3f6393559e03f6ce93a"
+      "path": "assets/drill-BUob5k5K.js",
+      "bytes": 22740,
+      "sha256": "701f7502ce873916bbb1776a62be147f7d189210b8169a4ed685832c450b84fb"
     },
     {
       "path": "assets/drillArchive-Cm5rkqRE.js",
@@ -172,9 +172,9 @@
       "sha256": "17b281c2817e3828b57ee07449f13e586e0a8e49c017c152f3334da6309ea47e"
     },
     {
-      "path": "assets/index-DyLI1KB-.js",
+      "path": "assets/index-BegcrtF7.js",
       "bytes": 66120,
-      "sha256": "1e711dd18595941638743194a7f9a9c485aa6066b763ae51e07dd3a2e62ecf6d"
+      "sha256": "0784d7d683159ee5caa8a2e61e57b959ac11b17e68380cf24f6b9ce4f48ac4dc"
     },
     {
       "path": "assets/modulepreload-polyfill-P2Xu9kJm.js",
@@ -207,9 +207,9 @@
       "sha256": "dae5613d0bd3f7be1612a03e08dec73249047233f045335586b814b92ce04d3d"
     },
     {
-      "path": "assets/records-CCN2oLoI.js",
+      "path": "assets/records-CClInH-M.js",
       "bytes": 7624,
-      "sha256": "8aa67966ec43334ab7bee913d2260508181084c4e2e1dfe7312c1e8141edec0c"
+      "sha256": "fcd89a296f91b199a9b9e03e8bab78a470037cbdff07c1712774fd2329d42ecb"
     },
     {
       "path": "assets/replay-jv-IMxwt.js",
@@ -262,9 +262,9 @@
       "sha256": "8a93fb6bd5bdb48e556df5c843334a16ed87b1e6aef9eda41d2853dc56f49198"
     },
     {
-      "path": "assets/smoke-BsLflRXQ.js",
+      "path": "assets/smoke-75I1XRgO.js",
       "bytes": 40068,
-      "sha256": "0d861ad225c41a5cb074a0bb54aa15642331f6a46988101f82c9f3daee5ab865"
+      "sha256": "a1998cac3511e4d80dc8a9746da490f980f311cd967b7ff252f10518c733f8df"
     },
     {
       "path": "assets/srgb-BYLCyAwo.js",
@@ -294,7 +294,7 @@
     {
       "path": "drill.html",
       "bytes": 4228,
-      "sha256": "0024fa316593ebfa283dfc098558664896357b2835765de63d5089f9e5947716"
+      "sha256": "f224fad80d67b7dd36d82e5ff07359c0c81cf120423ae16d9909dad85e1cd1d2"
     },
     {
       "path": "feel.html",
@@ -344,12 +344,12 @@
     {
       "path": "index.html",
       "bytes": 10339,
-      "sha256": "a0e173d2ea9b9ac2e052554cb8433eb6ef78c249d85c2531b2cf91ccf2e3b509"
+      "sha256": "3dafc1a4e7e913b85ffe21556d03e1b516e134b40634bab1365aa36cfa0277c5"
     },
     {
       "path": "offline-manifest.json",
       "bytes": 18196,
-      "sha256": "ae860f1589dc22a30ba7bde4aea93b743fabafcc50c42940ac68d99d6cef5c08"
+      "sha256": "68016fe6b6cc84543befb6efd86815f01dad351d309f8c8806d060a4c98eb955"
     },
     {
       "path": "offline-probe/sample/je_gray_park_2k.ktx2",
@@ -364,7 +364,7 @@
     {
       "path": "records.html",
       "bytes": 6562,
-      "sha256": "f2fe4aaf9282537cd0330fdae6e5461e7f921ff86db791a0e57dedd4a80ff2c1"
+      "sha256": "b56b9ebc0c11c87df282c4345912fb7689e43fbc40bf8e803db7ce3a5cf314e9"
     },
     {
       "path": "sky/farmland-overcast/dome.ktx2",
@@ -429,7 +429,7 @@
     {
       "path": "smoke.html",
       "bytes": 4382,
-      "sha256": "9ce15c0179a5c20e58779fa391a85ca2d7de7024fe6acd801d535cef92337b0e"
+      "sha256": "256800ff8ad91c9a9c837adafc315d2d1517dde1151b851754c6fffecf156448"
     },
     {
       "path": "smoke/quadrants.ktx2",
@@ -444,7 +444,7 @@
     {
       "path": "sw.js",
       "bytes": 6954,
-      "sha256": "364a579ec3723405014c8509705bab735d42c37166693fdd63a8ee9087275ce1"
+      "sha256": "691ed78db3354cef4e5a9e54383375da056a0718ae95bdcc46d419b51cd3e2de"
     }
   ]
 }
