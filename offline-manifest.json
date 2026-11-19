@@ -1,11 +1,11 @@
 {
   "formatVersion": 1,
-  "version": "0.0.0+ca7c88a",
+  "version": "0.0.0+2b7dbd9",
   "shell": [
     {
       "path": "LICENSES.html",
       "bytes": 5759,
-      "sha256": "e28ff5c82ea2799b18d232fc850f0d80dd117ba960751a2b14826a7f3edff067"
+      "sha256": "c190bdfc5f2f46890f10899ae2eaa40dd16a13aeb893674d7942342c270291c5"
     },
     {
       "path": "assets/aaToggle-CmCDK7Gp.js",
@@ -48,9 +48,9 @@
       "sha256": "d860d9ff8d61d4f4ff8dbfa810540dfc174dfc3f34abd22084f34ecbe304545f"
     },
     {
-      "path": "assets/buildInfo-D20VVj-8.js",
+      "path": "assets/buildInfo-DBeyhJIq.js",
       "bytes": 37,
-      "sha256": "e8c68ec0d9e157617dae7e75d9a72dcc0fbc5b57bb1b30cf538370f683e309d8"
+      "sha256": "75fb61f379098d25a79b598d14eb92a5f70117029b7da19dc8dca625cb7b202e"
     },
     {
       "path": "assets/canvasSize-BfUx9E42.js",
@@ -63,9 +63,9 @@
       "sha256": "08df22f4696080e3ec7721abea253e40b0d479e49fa797c52133e20b36fcc0ed"
     },
     {
-      "path": "assets/drill-BUob5k5K.js",
+      "path": "assets/drill-BWmpEByd.js",
       "bytes": 22740,
-      "sha256": "701f7502ce873916bbb1776a62be147f7d189210b8169a4ed685832c450b84fb"
+      "sha256": "94df6b88000fb1588ddd8964260d0ac2a7eb29d45b1a39287e299ed3407fc3ba"
     },
     {
       "path": "assets/drillArchive-Cm5rkqRE.js",
@@ -133,9 +133,9 @@
       "sha256": "17b281c2817e3828b57ee07449f13e586e0a8e49c017c152f3334da6309ea47e"
     },
     {
-      "path": "assets/index-BegcrtF7.js",
+      "path": "assets/index-CfJYFY4r.js",
       "bytes": 66120,
-      "sha256": "0784d7d683159ee5caa8a2e61e57b959ac11b17e68380cf24f6b9ce4f48ac4dc"
+      "sha256": "a9cb4e901cba875dbe72896a5a2ec3b175ee63f5e0dd5a7a019ea7c35454a819"
     },
     {
       "path": "assets/modulepreload-polyfill-P2Xu9kJm.js",
@@ -168,9 +168,9 @@
       "sha256": "dae5613d0bd3f7be1612a03e08dec73249047233f045335586b814b92ce04d3d"
     },
     {
-      "path": "assets/records-CClInH-M.js",
+      "path": "assets/records-BoXaR_O7.js",
       "bytes": 7624,
-      "sha256": "fcd89a296f91b199a9b9e03e8bab78a470037cbdff07c1712774fd2329d42ecb"
+      "sha256": "a5456e135b675bbcc79014a7043c09de2b6a9a44a3c33b8800004901c8513808"
     },
     {
       "path": "assets/replay-jv-IMxwt.js",
@@ -240,7 +240,7 @@
     {
       "path": "drill.html",
       "bytes": 4228,
-      "sha256": "f224fad80d67b7dd36d82e5ff07359c0c81cf120423ae16d9909dad85e1cd1d2"
+      "sha256": "38a15c13e5431122910e57770c4ca15d5a9056f19a35025b6df13d9aed2a8ae3"
     },
     {
       "path": "feel.html",
@@ -249,18 +249,18 @@
     },
     {
       "path": "gamepad-setup.html",
-      "bytes": 5368,
-      "sha256": "70b699a3cc57f31b60b2cb09528f12a4d0c4c4ba9cebb1c263898e89be28d124"
+      "bytes": 5535,
+      "sha256": "39beebb99404c25252adf39a48a2a2e1941c91d1627ee240613d3f7b79f16a66"
     },
     {
       "path": "index.html",
       "bytes": 10339,
-      "sha256": "3dafc1a4e7e913b85ffe21556d03e1b516e134b40634bab1365aa36cfa0277c5"
+      "sha256": "d73dda413b8f8eb3ba06e6f93203eabc26d2a8e9fa033b90a7da015e0f7aa1f1"
     },
     {
       "path": "records.html",
       "bytes": 6562,
-      "sha256": "b56b9ebc0c11c87df282c4345912fb7689e43fbc40bf8e803db7ce3a5cf314e9"
+      "sha256": "85e2e08ab854afa1255f83786a8c5c4d432c6704f9fd14e6f3864c9bede2b8a8"
     }
   ],
   "pageDeps": {
@@ -273,7 +273,7 @@
       "assets/basis_transcoder-VXdx5NbI.wasm",
       "assets/basis_transcoder-o4Hde_L7.js",
       "assets/browser-BktjcKxh.js",
-      "assets/buildInfo-D20VVj-8.js",
+      "assets/buildInfo-DBeyhJIq.js",
       "assets/canvasSize-BfUx9E42.js",
       "assets/consoleCapture-CGtWRzT-.js",
       "assets/exactMath-YJr5tnJ6.js",
@@ -286,7 +286,7 @@
       "assets/gamepadSource-iPelOZo2.js",
       "assets/gamepadText-BvtZ80yg.js",
       "assets/honestyNotices-BFHBd_Gd.js",
-      "assets/index-BegcrtF7.js",
+      "assets/index-CfJYFY4r.js",
       "assets/modulepreload-polyfill-P2Xu9kJm.js",
       "assets/notRecorded-U8o28lkj.js",
       "assets/offlineStore-CZZIKs1B.js",
@@ -309,7 +309,7 @@
     ],
     "records.html": [
       "assets/browser-BktjcKxh.js",
-      "assets/buildInfo-D20VVj-8.js",
+      "assets/buildInfo-DBeyhJIq.js",
       "assets/drillArchive-Cm5rkqRE.js",
       "assets/exactMath-YJr5tnJ6.js",
       "assets/field-Fs0YcU2k.js",
@@ -317,7 +317,7 @@
       "assets/modulepreload-polyfill-P2Xu9kJm.js",
       "assets/notRecorded-U8o28lkj.js",
       "assets/offlineStore-CZZIKs1B.js",
-      "assets/records-CClInH-M.js",
+      "assets/records-BoXaR_O7.js",
       "assets/replayText-pNe9mNff.js",
       "assets/roundRecord-B0haNVEh.js",
       "assets/savedDrill-DcKkDwUv.js",
@@ -341,9 +341,9 @@
       "assets/baselineNotice-D2F8p2Ku.css",
       "assets/basis_transcoder-VXdx5NbI.wasm",
       "assets/basis_transcoder-o4Hde_L7.js",
-      "assets/buildInfo-D20VVj-8.js",
+      "assets/buildInfo-DBeyhJIq.js",
       "assets/canvasSize-BfUx9E42.js",
-      "assets/drill-BUob5k5K.js",
+      "assets/drill-BWmpEByd.js",
       "assets/drillArchive-Cm5rkqRE.js",
       "assets/exactMath-YJr5tnJ6.js",
       "assets/examScene-CqGn9aDy.js",

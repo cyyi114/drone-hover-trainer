@@ -1,0 +1,46 @@
+{
+  "formatVersion": 1,
+  "gamepadId": "穿越机手柄 (Vendor: 1209 Product: 4f54)",
+  "mapping": {
+    "throttle": {
+      "axis": 2,
+      "invert": false,
+      "center": 0.016000032424926758,
+      "min": -1,
+      "max": 1.0399999618530273,
+      "deadzone": 0.08,
+      "expo": 0.1
+    },
+    "yaw": {
+      "axis": 3,
+      "invert": false,
+      "center": 0.024000048637390137,
+      "min": -0.8400000333786011,
+      "max": 0.9199999570846558,
+      "deadzone": 0.08,
+      "expo": 0.6
+    },
+    "pitch": {
+      "axis": 1,
+      "invert": false,
+      "center": 0.024000048637390137,
+      "min": -0.871999979019165,
+      "max": 0.8880000114440918,
+      "deadzone": 0.08,
+      "expo": 0.8
+    },
+    "roll": {
+      "axis": 0,
+      "invert": false,
+      "center": 0.024000048637390137,
+      "min": -0.871999979019165,
+      "max": 0.8880000114440918,
+      "deadzone": 0.08,
+      "expo": 0.8
+    }
+  },
+  "buttons": {
+    "callout": 9,
+    "scorecard": 7
+  }
+}
