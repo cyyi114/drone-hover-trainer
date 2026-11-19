@@ -1,0 +1,141 @@
+{
+  "asset": {
+    "name": "Clean Asphalt",
+    "author": "Dimitrios Savva",
+    "page": "https://polyhaven.com/a/clean_asphalt",
+    "license": "CC0 1.0",
+    "licenseEvidence": "https://polyhaven.com/license（Poly Haven 全站素材都是 CC0）",
+    "downloaded": "2026-11-16",
+    "realWorldSize": "2.1 m × 2.1 m（素材頁標的尺寸）"
+  },
+  "container": "KTX2，UASTC LDR 4x4，Zstandard 壓縮，含 mipmap",
+  "encoder": {
+    "name": "Basis Universal 官方的 WebAssembly 編碼器",
+    "version": "v2_50",
+    "license": "Apache-2.0",
+    "files": [
+      {
+        "url": "https://raw.githubusercontent.com/BinomialLLC/basis_universal/v2_50/webgl/encoder/build/basis_encoder.js",
+        "sha256": "d225ce1e7012609bcfbe338351c8778d95eb1c19d404314d513b2b2df94a6ffb"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/BinomialLLC/basis_universal/v2_50/webgl/encoder/build/basis_encoder.wasm",
+        "sha256": "48d4e39ccaa1e290a17d00c13b353a728227bb439108d5e6c944fe6ab80552db"
+      }
+    ]
+  },
+  "command": "npm run field:pavement",
+  "files": [
+    {
+      "file": "pavement-albedo.ktx2",
+      "what": "顏色（diffuse）",
+      "bytes": 4445124,
+      "sha256": "164b3a626825494b9aa25947defce7580e93351b3282cf6f3c75720865cb872a",
+      "source": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/clean_asphalt/clean_asphalt_diff_2k.png",
+        "sha256": "8531aa831e6346e7d5a20711454a32588f56013de41156b18cce30bb4c6edcf5",
+        "bytes": 23020717,
+        "format": "PNG，2048 × 2048，16 位元"
+      },
+      "settings": {
+        "format": "cUASTC_LDR_4x4",
+        "encoding": "srgb",
+        "mipmaps": true,
+        "mipWrapping": true,
+        "yFlip": true,
+        "supercompression": "zstd"
+      },
+      "roundTrip": {
+        "meanAfter": [
+          68.39,
+          69.38,
+          69.71
+        ],
+        "sourceMean": [
+          68.5,
+          69.4,
+          69.8
+        ],
+        "limit": [
+          2.5,
+          2.5,
+          2.5
+        ]
+      }
+    },
+    {
+      "file": "pavement-normal.ktx2",
+      "what": "法線（OpenGL 的方向：綠色朝上）",
+      "bytes": 5070656,
+      "sha256": "175c276110dfec7146251af0877afbe84712939b534cfaa83d0bb7ff9b846440",
+      "source": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/clean_asphalt/clean_asphalt_nor_gl_2k.png",
+        "sha256": "eb1bb30f0d906ea8b38543cb6add6854ef5bd0fce0ef073b2f83e0d2d3e9ca8a",
+        "bytes": 22989548,
+        "format": "PNG，2048 × 2048，16 位元"
+      },
+      "settings": {
+        "format": "cUASTC_LDR_4x4",
+        "encoding": "normal",
+        "mipmaps": true,
+        "mipWrapping": true,
+        "yFlip": true,
+        "supercompression": "zstd"
+      },
+      "roundTrip": {
+        "meanAfter": [
+          127.33,
+          127.2,
+          251.8
+        ],
+        "sourceMean": [
+          127.5,
+          127.5,
+          250
+        ],
+        "limit": [
+          2.5,
+          2.5,
+          12
+        ]
+      }
+    },
+    {
+      "file": "pavement-roughness.ktx2",
+      "what": "粗糙度（灰階）",
+      "bytes": 4162431,
+      "sha256": "b5cb20fcbbe0d0af98ae968f08bdd9ff17ac4a460d0cba23362bfc2b66044678",
+      "source": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/clean_asphalt/clean_asphalt_rough_2k.png",
+        "sha256": "8c0c513f915be3551789837e95399d2d92a2484cd41ae622960533c0c35b05c9",
+        "bytes": 7633361,
+        "format": "PNG，2048 × 2048，16 位元"
+      },
+      "settings": {
+        "format": "cUASTC_LDR_4x4",
+        "encoding": "linear",
+        "mipmaps": true,
+        "mipWrapping": true,
+        "yFlip": true,
+        "supercompression": "zstd"
+      },
+      "roundTrip": {
+        "meanAfter": [
+          168.58,
+          168.58,
+          168.58
+        ],
+        "sourceMean": [
+          168.4,
+          168.4,
+          168.4
+        ],
+        "limit": [
+          2.5,
+          2.5,
+          2.5
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "file": "airframe/generic-hex-1.glb",
+  "source": "自製：程式生成（src/render/hexAirframe/geometry.ts 照示意基線算零件，tools/airframe/build.ts 算環境遮蔽、寫成 glTF）",
+  "license": "自製，沒有第三方素材",
+  "baseline": "generic-hex-1",
+  "label": "通用示意，依口述、未見實物",
+  "command": "npm run airframe",
+  "ambientOcclusion": {
+    "rays": 96,
+    "maxDistance": 0.12,
+    "bias": 0.0004,
+    "note": "只算機體擋機體；地面與影子不烘（票 23 即時算）。Blender 的離線烘焙是票 50。"
+  },
+  "meshes": [
+    {
+      "material": "carbon",
+      "vertices": 8624,
+      "triangles": 14384
+    },
+    {
+      "material": "alloy",
+      "vertices": 6276,
+      "triangles": 7360
+    },
+    {
+      "material": "motorCan",
+      "vertices": 3612,
+      "triangles": 5280
+    },
+    {
+      "material": "brightAlloy",
+      "vertices": 4056,
+      "triangles": 5376
+    },
+    {
+      "material": "plastic",
+      "vertices": 593,
+      "triangles": 972
+    },
+    {
+      "material": "battery",
+      "vertices": 1214,
+      "triangles": 1240
+    }
+  ],
+  "bytes": 898420,
+  "sha256": "ff983a0bed1e21f27108fab44803ccce92605006cf4027c9dd9490bf8e7249eb"
+}

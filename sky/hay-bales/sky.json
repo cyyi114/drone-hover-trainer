@@ -1,0 +1,233 @@
+{
+  "formatVersion": 1,
+  "id": "hay-bales",
+  "forwardAzimuthDeg": 61.1346,
+  "exposure": 0.623572,
+  "sun": {
+    "direction": {
+      "x": 0.30669901,
+      "y": -0.65771815,
+      "z": 0.68799894
+    },
+    "azimuthDeg": 155,
+    "elevationDeg": 43.4719,
+    "irradiance": [
+      5.690548,
+      6.102099,
+      6.915052
+    ]
+  },
+  "energy": {
+    "note": "不把太陽算兩次：太陽那一塊超過上限的能量全部給方向光，天球裡那一塊壓到上限。檢查：原圖的水平面照度 ＝ 天球的水平面照度 ＋ 方向光的照度 × sin(太陽仰角)。",
+    "horizontalIrradiance": [
+      4.51176,
+      5.074915,
+      6.222701
+    ],
+    "ambientHorizontalIrradiance": [
+      0.596603,
+      0.876771,
+      1.465218
+    ],
+    "sunIrradiance": [
+      5.690548,
+      6.102099,
+      6.915052
+    ],
+    "balance": 1.000012,
+    "limit": 0.01,
+    "sunShareOfHorizontal": 0.8294,
+    "exposureRule": "曝光常數 ＝ π ÷ 水平面照度的亮度：水平的純白漫射板剛好是 1.0。每個情境固定，執行時不自動調。"
+  },
+  "strip": {
+    "width": 7752,
+    "height": 1404,
+    "azimuthFromDeg": -46.9881,
+    "azimuthToDeg": 46.9881,
+    "elevationTopDeg": 12.9957,
+    "elevationBottomDeg": -4.0248
+  },
+  "provenance": {
+    "source": {
+      "name": "Hay Bales",
+      "author": "Grzegorz Wronkowski",
+      "page": "https://polyhaven.com/a/hay_bales",
+      "license": "CC0 1.0",
+      "licenseEvidence": "https://polyhaven.com/license（Poly Haven 全站素材都是 CC0）；素材的資料 https://api.polyhaven.com/info/hay_bales；檔案清單與 md5 https://api.polyhaven.com/files/hay_bales",
+      "taken": "2025-08-26（素材頁的拍攝日期），波蘭下西里西亞（北緯 50.555、東經 16.342）",
+      "downloaded": "2026-11-17",
+      "note": "素材頁標明沒有被夾掉（unclipped，evs_cap 24）。收割過的麥田，散著圓的乾草捆，遠處是樹列與山。原檔最大到 29k；這裡用 2k（天球）與 29k（地平線帶，一圈四片）。"
+    },
+    "encoder": {
+      "name": "Basis Universal 官方的 WebAssembly 編碼器",
+      "version": "v2_50",
+      "license": "Apache-2.0",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/BinomialLLC/basis_universal/v2_50/webgl/encoder/build/basis_encoder.js",
+          "sha256": "d225ce1e7012609bcfbe338351c8778d95eb1c19d404314d513b2b2df94a6ffb"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/BinomialLLC/basis_universal/v2_50/webgl/encoder/build/basis_encoder.wasm",
+          "sha256": "48d4e39ccaa1e290a17d00c13b353a728227bb439108d5e6c944fe6ab80552db"
+        }
+      ]
+    },
+    "command": "npm run sky",
+    "files": [
+      {
+        "file": "dome.ktx2",
+        "what": "天球：2048 × 1024 的全景，太陽那一塊超過上限的部分拿掉",
+        "bytes": 1722626,
+        "sha256": "cee428349595bf4b58997098ea2e0badc8cc0c23c25c506d13a31c60804070da",
+        "container": "KTX2，UASTC HDR 4x4，Zstandard 壓縮，不含 mipmap；在主力裝置上轉成 BC6H",
+        "source": {
+          "downloadUrl": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/hay_bales_2k.hdr",
+          "bytes": 5715909,
+          "sha256": "c0c27cae2e501b38c1647c8e8474dc3a8d2f289c21ca9db6ff4f8f6ffcc0de8c"
+        },
+        "settings": {
+          "format": "cUASTC_HDR_4x4",
+          "effort": 2,
+          "mipmaps": false,
+          "yFlip": true,
+          "supercompression": "zstd",
+          "ceiling": 32752
+        },
+        "clampedPixels": 0,
+        "sourceMax": 5.25,
+        "roundTrip": {
+          "medianRelativeError": 0.00631,
+          "sumRatio": 0.99956,
+          "comparedValues": 6291455
+        }
+      },
+      {
+        "file": "horizon-front.ktx2",
+        "what": "地平線帶一圈四片的其中一片：29k 的全景（29696 × 14848）裁出世界方位 0° 左右各 46.988°（相鄰兩片重疊的部分漸變接起來）、仰角 -4.02° 到 13.00°",
+        "bytes": 11721196,
+        "sha256": "acf4a3645ebdc59da3c9cd9981cd0fc303a73d30533cfb9db59313f305b509c5",
+        "container": "KTX2，UASTC HDR 4x4，Zstandard 壓縮，含 mipmap；在主力裝置上轉成 BC6H",
+        "source": {
+          "downloadUrl": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/16k%2B/hay_bales_29k.hdr",
+          "bytes": 1173686147,
+          "sha256": "5f22733e686f364327db89bf99d6b59d3cc42e71757556c061eb3726ac99134b"
+        },
+        "settings": {
+          "format": "cUASTC_HDR_4x4",
+          "effort": 2,
+          "mipmaps": true,
+          "yFlip": true,
+          "supercompression": "zstd",
+          "ceiling": 32752
+        },
+        "clampedPixels": 0,
+        "sourceMax": 2.91,
+        "roundTrip": {
+          "medianRelativeError": 0.00331,
+          "sumRatio": 0.99984,
+          "comparedValues": 32651424
+        }
+      },
+      {
+        "file": "horizon-right.ktx2",
+        "what": "地平線帶一圈四片的其中一片：29k 的全景（29696 × 14848）裁出世界方位 90° 左右各 46.988°（相鄰兩片重疊的部分漸變接起來）、仰角 -4.02° 到 13.00°",
+        "bytes": 12078295,
+        "sha256": "7e9315a3e8dce2fd700fc2c4bec1ea5ce3fe658c31d85a25e42ee04a8c7e786a",
+        "container": "KTX2，UASTC HDR 4x4，Zstandard 壓縮，含 mipmap；在主力裝置上轉成 BC6H",
+        "source": {
+          "downloadUrl": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/16k%2B/hay_bales_29k.hdr",
+          "bytes": 1173686147,
+          "sha256": "5f22733e686f364327db89bf99d6b59d3cc42e71757556c061eb3726ac99134b"
+        },
+        "settings": {
+          "format": "cUASTC_HDR_4x4",
+          "effort": 2,
+          "mipmaps": true,
+          "yFlip": true,
+          "supercompression": "zstd",
+          "ceiling": 32752
+        },
+        "clampedPixels": 0,
+        "sourceMax": 2.17,
+        "roundTrip": {
+          "medianRelativeError": 0.00272,
+          "sumRatio": 0.99989,
+          "comparedValues": 32651424
+        }
+      },
+      {
+        "file": "horizon-back.ktx2",
+        "what": "地平線帶一圈四片的其中一片：29k 的全景（29696 × 14848）裁出世界方位 180° 左右各 46.988°（相鄰兩片重疊的部分漸變接起來）、仰角 -4.02° 到 13.00°",
+        "bytes": 11965697,
+        "sha256": "f5847b95a4b38c22d9ccf2c802787a7e89aaa95521c8e10dc06d59bf5414bf66",
+        "container": "KTX2，UASTC HDR 4x4，Zstandard 壓縮，含 mipmap；在主力裝置上轉成 BC6H",
+        "source": {
+          "downloadUrl": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/16k%2B/hay_bales_29k.hdr",
+          "bytes": 1173686147,
+          "sha256": "5f22733e686f364327db89bf99d6b59d3cc42e71757556c061eb3726ac99134b"
+        },
+        "settings": {
+          "format": "cUASTC_HDR_4x4",
+          "effort": 2,
+          "mipmaps": true,
+          "yFlip": true,
+          "supercompression": "zstd",
+          "ceiling": 32752
+        },
+        "clampedPixels": 0,
+        "sourceMax": 27.88,
+        "roundTrip": {
+          "medianRelativeError": 0.00282,
+          "sumRatio": 0.99981,
+          "comparedValues": 32651424
+        }
+      },
+      {
+        "file": "horizon-left.ktx2",
+        "what": "地平線帶一圈四片的其中一片：29k 的全景（29696 × 14848）裁出世界方位 270° 左右各 46.988°（相鄰兩片重疊的部分漸變接起來）、仰角 -4.02° 到 13.00°",
+        "bytes": 11873734,
+        "sha256": "d840c0d50a008d9a837bae7f276819d3855d78b57ef26355d140a0a1eded1c92",
+        "container": "KTX2，UASTC HDR 4x4，Zstandard 壓縮，含 mipmap；在主力裝置上轉成 BC6H",
+        "source": {
+          "downloadUrl": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/16k%2B/hay_bales_29k.hdr",
+          "bytes": 1173686147,
+          "sha256": "5f22733e686f364327db89bf99d6b59d3cc42e71757556c061eb3726ac99134b"
+        },
+        "settings": {
+          "format": "cUASTC_HDR_4x4",
+          "effort": 2,
+          "mipmaps": true,
+          "yFlip": true,
+          "supercompression": "zstd",
+          "ceiling": 32752
+        },
+        "clampedPixels": 0,
+        "sourceMax": 1.95,
+        "roundTrip": {
+          "medianRelativeError": 0.00425,
+          "sumRatio": 0.99982,
+          "comparedValues": 32651424
+        }
+      }
+    ]
+  },
+  "sunEstimate": {
+    "note": "太陽的方向是從 2k 的全景估的：最亮處周圍超過上限的部分照立體角加權求重心（tools/sky/analysis.ts）。29k 的來源另外估一次當校核。",
+    "imageAzimuthDeg": 216.1346,
+    "imageElevationDeg": 43.4719,
+    "peakLuminance": 91965.44,
+    "skyLuminance": 0.6004,
+    "cap": 1.2009,
+    "peakOverSky": 153167,
+    "energyRadiusDeg": 0.285,
+    "regionPixels": 4211,
+    "crossCheck16k": {
+      "imageAzimuthDeg": 216.1347,
+      "imageElevationDeg": 43.4704,
+      "differenceDeg": 0.0015,
+      "irradianceLuminance": 6.0482,
+      "limitDeg": 0.5
+    }
+  }
+}

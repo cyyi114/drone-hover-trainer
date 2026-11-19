@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>手感校準｜四面停懸訓練模擬器</title>
+    <link rel="icon" href="data:," />
+    <style>:root{--lightningcss-light: ;--lightningcss-dark:initial;color-scheme:dark;--bg:#101214;--panel:#181b1f;--line:#2b3036;--text:#e6e8ea;--muted:#a9b0b6;--accent:#2bb3a3}body{background:var(--bg);color:var(--text);margin:0;font:15px/1.6 system-ui,Microsoft JhengHei,sans-serif}main{max-width:960px;margin:0 auto;padding:24px 16px 48px}h1{margin:0 0 8px;font-size:22px}h2{margin:0 0 8px;font-size:16px}p{margin:0 0 12px}.muted{color:var(--muted)}section{background:var(--panel);border:1px solid var(--line);border-radius:8px;margin-top:20px;padding:16px}table{border-collapse:collapse;width:100%}th,td{border-bottom:1px solid var(--line);text-align:left;vertical-align:top;padding:6px 8px;font-weight:400}thead th{color:var(--muted)}td.num{font-variant-numeric:tabular-nums}input,select,button{font:inherit;color:var(--text);border:1px solid var(--line);background:#20242a;border-radius:6px;padding:4px 8px}input[type=range]{width:100%;min-width:160px;accent-color:var(--accent);padding:0}input[type=radio]{accent-color:var(--accent)}button{cursor:pointer;margin:0 8px 8px 0}button:hover:not(:disabled),select:hover,input:hover:not(:disabled){border-color:var(--accent)}button:disabled,input:disabled{opacity:.5;cursor:default}output{font-variant-numeric:tabular-nums}.feel-class{border-bottom:1px solid var(--line);grid-template-columns:minmax(7em,9em) 1fr 5em;align-items:center;gap:4px 12px;padding:8px 0;display:grid}.feel-class .hint{color:var(--muted);grid-column:2/4;margin:0;font-size:13px}.feel-class .ends{color:var(--muted);grid-column:2/3;justify-content:space-between;font-size:13px;display:flex}.feel-class.is-selected{background:#1d2a29}#feel-said{min-height:1.6em;color:var(--accent)}#feel-problem{color:#f2b24c}.feel-row.is-active td:first-child:after{content:"（新回合用這一組）";color:var(--accent)}a{color:var(--accent)}</style>
+    <script type="module" crossorigin src="./assets/feel-Bij6PbD1.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-P2Xu9kJm.js">
+    <link rel="modulepreload" crossorigin href="./assets/exactMath-YJr5tnJ6.js">
+    <link rel="modulepreload" crossorigin href="./assets/sim-CEThF67U.js">
+    <link rel="modulepreload" crossorigin href="./assets/feelStorage-MVdoCn2E.js">
+    <link rel="modulepreload" crossorigin href="./assets/replay-CuYm60EA.js">
+    <link rel="modulepreload" crossorigin href="./assets/roundRecord-CIROd4TO.js">
+    <link rel="modulepreload" crossorigin href="./assets/roundRecorder-BeZwusET.js">
+  </head>
+  <body>
+    <main id="feel-root">
+      <h1>手感校準</h1>
+      <p class="muted" id="feel-intro"></p>
+      <p id="feel-problem" role="status"></p>
+
+      <section aria-label="新回合用的手感">
+        <h2>新回合用的手感</h2>
+        <p id="feel-active"></p>
+        <p>
+          <button type="button" id="feel-use-baseline">切回基線</button>
+        </p>
+        <p class="muted" id="feel-reload"></p>
+      </section>
+
+      <section aria-label="三個觀察量">
+        <h2>三個觀察量（無風）</h2>
+        <p class="muted">每一個量都是照一份固定的輸入飛一次、從重播出來的軌跡量的：放桿滑多遠是穩穩地以每秒 3 公尺往前飛時放桿；轉 90° 是偏航桿打到底；回平是推滿桿再放開。你在訓練場目測的也是這三件事。</p>
+        <table>
+          <thead>
+            <tr>
+              <th>觀察量</th>
+              <th id="feel-baseline-head">基線</th>
+              <th id="feel-candidate-head">正在調的</th>
+              <th>比基線</th>
+            </tr>
+          </thead>
+          <tbody id="feel-observed"></tbody>
+        </table>
+      </section>
+
+      <section aria-label="一次調一類">
+        <h2>一次調一類</h2>
+        <p class="muted">選一類，拉那一類的滑桿；另外兩類停在起點，不能動。換一類調的時候，沒存的調整會還原到起點。百分比 100% 就是起點原來的樣子。</p>
+        <p>
+          <label>起點：<select id="feel-start"></select></label>
+        </p>
+        <div id="feel-classes" role="radiogroup" aria-label="調哪一類"></div>
+        <p class="muted" id="feel-changes" style="margin-top: 12px"></p>
+        <p>
+          <button type="button" id="feel-reset">還原成起點</button>
+        </p>
+      </section>
+
+      <section aria-label="存起來">
+        <h2>存起來</h2>
+        <p class="muted">存成一組具名的參數組：基線 baseline-3 照樣留著，隨時可以切回去。存起來不會改新回合用哪一組；想馬上用就按「存起來，新回合就用它」。</p>
+        <p>
+          <label>名稱：<input id="feel-label" type="text" maxlength="30" placeholder="例如：放桿滑近一點" size="24" /></label>
+        </p>
+        <p>
+          <button type="button" id="feel-save">存起來</button>
+          <button type="button" id="feel-save-use">存起來，新回合就用它</button>
+        </p>
+        <p id="feel-said" role="status" aria-live="polite"></p>
+      </section>
+
+      <section aria-label="存好的參數組">
+        <h2>存好的參數組</h2>
+        <p class="muted" id="feel-saved-empty">還沒有存過。</p>
+        <table id="feel-saved-table">
+          <thead>
+            <tr>
+              <th>名稱</th>
+              <th>三個百分比</th>
+              <th>參數組的名字（回合紀錄記的就是它）</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="feel-saved"></tbody>
+        </table>
+      </section>
+
+      <p class="muted" style="margin-top: 20px"><a href="./">回飛行頁</a>　<a href="records.html">紀錄</a>　<a href="gamepad-setup.html">手把設定（桿量曲線）</a></p>
+    </main>
+  </body>
+</html>

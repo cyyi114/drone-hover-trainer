@@ -1,0 +1,105 @@
+{
+  "asset": {
+    "name": "Withered Grass",
+    "author": "Charlotte Baglioni",
+    "page": "https://polyhaven.com/a/withered_grass",
+    "license": "CC0 1.0",
+    "licenseEvidence": "https://polyhaven.com/license（Poly Haven 全站素材都是 CC0）；素材的資料 https://api.polyhaven.com/info/withered_grass",
+    "downloaded": "2026-11-17",
+    "realWorldSize": "2 m × 2 m（素材頁標的尺寸）",
+    "note": "來源檔的 md5 和 https://api.polyhaven.com/files/withered_grass 列的一致（下載當天核對）"
+  },
+  "container": "KTX2，UASTC LDR 4x4，Zstandard 壓縮，含 mipmap",
+  "encoder": {
+    "name": "Basis Universal 官方的 WebAssembly 編碼器",
+    "version": "v2_50",
+    "license": "Apache-2.0",
+    "files": [
+      {
+        "url": "https://raw.githubusercontent.com/BinomialLLC/basis_universal/v2_50/webgl/encoder/build/basis_encoder.js",
+        "sha256": "d225ce1e7012609bcfbe338351c8778d95eb1c19d404314d513b2b2df94a6ffb"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/BinomialLLC/basis_universal/v2_50/webgl/encoder/build/basis_encoder.wasm",
+        "sha256": "48d4e39ccaa1e290a17d00c13b353a728227bb439108d5e6c944fe6ab80552db"
+      }
+    ]
+  },
+  "command": "npm run field:grass",
+  "files": [
+    {
+      "file": "grass-albedo.ktx2",
+      "what": "顏色（diffuse）",
+      "bytes": 1363780,
+      "sha256": "ba8f19d8e23781c58008b0473ab72deab6351a6e9a6505c1caf89b5f1226f064",
+      "source": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/withered_grass/withered_grass_diff_1k.png",
+        "sha256": "30bdaa96e88b7194d7d6b5f9c385d1155b34843c5e4eb4da3b93b48f328f4198",
+        "bytes": 5999305,
+        "format": "PNG，1024 × 1024，8 位元"
+      },
+      "settings": {
+        "format": "cUASTC_LDR_4x4",
+        "encoding": "srgb",
+        "mipmaps": true,
+        "mipWrapping": true,
+        "yFlip": true,
+        "supercompression": "zstd"
+      },
+      "roundTrip": {
+        "meanAfter": [
+          172.5,
+          147.43,
+          121.35
+        ],
+        "sourceMean": [
+          172.5,
+          147.5,
+          121.5
+        ],
+        "limit": [
+          2.5,
+          2.5,
+          2.5
+        ]
+      }
+    },
+    {
+      "file": "grass-normal.ktx2",
+      "what": "法線（OpenGL 的方向：綠色朝上）",
+      "bytes": 1352636,
+      "sha256": "59a261edc28d7725d67fa80e5bc8a190901e6926b5217c8861f1f5304d9a436b",
+      "source": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/withered_grass/withered_grass_nor_gl_1k.png",
+        "sha256": "96a6c76dc4e98824bea0e091b749d13b87fbab53b85c5bc95779111b1b0301f4",
+        "bytes": 6142710,
+        "format": "PNG，1024 × 1024，8 位元"
+      },
+      "settings": {
+        "format": "cUASTC_LDR_4x4",
+        "encoding": "normal",
+        "mipmaps": true,
+        "mipWrapping": true,
+        "yFlip": true,
+        "supercompression": "zstd"
+      },
+      "roundTrip": {
+        "meanAfter": [
+          127.56,
+          127.02,
+          221.83
+        ],
+        "sourceMean": [
+          127.7,
+          127.2,
+          221.9
+        ],
+        "limit": [
+          2.5,
+          2.5,
+          12
+        ]
+      }
+    }
+  ]
+}

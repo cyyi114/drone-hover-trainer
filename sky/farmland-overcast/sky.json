@@ -1,0 +1,228 @@
+{
+  "formatVersion": 1,
+  "id": "farmland-overcast",
+  "forwardAzimuthDeg": 198,
+  "exposure": 0.771008,
+  "sun": {
+    "direction": {
+      "x": 0,
+      "y": 0,
+      "z": 1
+    },
+    "azimuthDeg": 0,
+    "elevationDeg": 90,
+    "irradiance": [
+      0,
+      0,
+      0
+    ]
+  },
+  "energy": {
+    "note": "陰天沒有拆：整張天球都是環境光，方向光的照度是 0。曝光常數照同一條規則算（水平的純白漫射板剛好是 1.0），但是這個情境自己的一個。",
+    "horizontalIrradiance": [
+      3.657107,
+      4.111253,
+      4.94162
+    ],
+    "ambientHorizontalIrradiance": [
+      3.657107,
+      4.111253,
+      4.94162
+    ],
+    "sunIrradiance": [
+      0,
+      0,
+      0
+    ],
+    "balance": 1,
+    "limit": 0.01,
+    "sunShareOfHorizontal": 0,
+    "exposureRule": "曝光常數 ＝ π ÷ 水平面照度的亮度：水平的純白漫射板剛好是 1.0。每個情境固定，執行時不自動調。"
+  },
+  "strip": {
+    "width": 7752,
+    "height": 1404,
+    "azimuthFromDeg": -46.9881,
+    "azimuthToDeg": 46.9881,
+    "elevationTopDeg": 12.9957,
+    "elevationBottomDeg": -4.0248
+  },
+  "provenance": {
+    "source": {
+      "name": "Farmland Overcast",
+      "author": "Grzegorz Wronkowski",
+      "page": "https://polyhaven.com/a/farmland_overcast",
+      "license": "CC0 1.0",
+      "licenseEvidence": "https://polyhaven.com/license（Poly Haven 全站素材都是 CC0）；素材的資料 https://api.polyhaven.com/info/farmland_overcast；檔案清單與 md5 https://api.polyhaven.com/files/farmland_overcast",
+      "taken": "2025-10-18（素材頁的拍攝日期），波蘭（北緯 50.363、東經 17.339）",
+      "downloaded": "2026-11-17",
+      "note": "素材頁標明太陽沒有被夾掉（evs_cap 12），整片的雲、看不到太陽的位置；開闊的農田，地平線低，遠處只有一條細的樹線。原檔最大到 29k；這裡用 2k（天球）與 29k（地平線帶，一圈四片）。落選的另一張：Farm Road（Dario Barresi，正前方有一條土路）。"
+    },
+    "encoder": {
+      "name": "Basis Universal 官方的 WebAssembly 編碼器",
+      "version": "v2_50",
+      "license": "Apache-2.0",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/BinomialLLC/basis_universal/v2_50/webgl/encoder/build/basis_encoder.js",
+          "sha256": "d225ce1e7012609bcfbe338351c8778d95eb1c19d404314d513b2b2df94a6ffb"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/BinomialLLC/basis_universal/v2_50/webgl/encoder/build/basis_encoder.wasm",
+          "sha256": "48d4e39ccaa1e290a17d00c13b353a728227bb439108d5e6c944fe6ab80552db"
+        }
+      ]
+    },
+    "command": "npm run sky -- --weather overcast",
+    "files": [
+      {
+        "file": "dome.ktx2",
+        "what": "天球：2048 × 1024 的全景，太陽那一塊超過上限的部分拿掉",
+        "bytes": 1885596,
+        "sha256": "60e09746cf3b7804483a06f5f5e92f6e68b843c8d56742e627990753b46c394a",
+        "container": "KTX2，UASTC HDR 4x4，Zstandard 壓縮，不含 mipmap；在主力裝置上轉成 BC6H",
+        "source": {
+          "downloadUrl": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/farmland_overcast_2k.hdr",
+          "bytes": 6529738,
+          "sha256": "26401f43d605bb4c96bdd76a624251a0ebdbef55735488852511ad1c6a88c41a"
+        },
+        "settings": {
+          "format": "cUASTC_HDR_4x4",
+          "effort": 2,
+          "mipmaps": false,
+          "yFlip": true,
+          "supercompression": "zstd",
+          "ceiling": 32752
+        },
+        "clampedPixels": 0,
+        "sourceMax": 20.75,
+        "roundTrip": {
+          "medianRelativeError": 0.0062,
+          "sumRatio": 0.99983,
+          "comparedValues": 6291456
+        }
+      },
+      {
+        "file": "horizon-front.ktx2",
+        "what": "地平線帶一圈四片的其中一片：29k 的全景（29696 × 14848）裁出世界方位 0° 左右各 46.988°（相鄰兩片重疊的部分漸變接起來）、仰角 -4.02° 到 13.00°",
+        "bytes": 12814966,
+        "sha256": "b5c6bb8b33eb8338d8e4b991170c7b6211abc4567fd5d6074c96bfa8f2c4e7bb",
+        "container": "KTX2，UASTC HDR 4x4，Zstandard 壓縮，含 mipmap；在主力裝置上轉成 BC6H",
+        "source": {
+          "downloadUrl": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/16k%2B/farmland_overcast_29k.hdr",
+          "bytes": 1183537337,
+          "sha256": "915f62bde294c8aa548dc7e7b5808cda003a4430f8ef6fda1b5830bbeec85429"
+        },
+        "settings": {
+          "format": "cUASTC_HDR_4x4",
+          "effort": 2,
+          "mipmaps": true,
+          "yFlip": true,
+          "supercompression": "zstd",
+          "ceiling": 32752
+        },
+        "clampedPixels": 0,
+        "sourceMax": 5.03,
+        "roundTrip": {
+          "medianRelativeError": 0.00222,
+          "sumRatio": 0.99986,
+          "comparedValues": 32651424
+        }
+      },
+      {
+        "file": "horizon-right.ktx2",
+        "what": "地平線帶一圈四片的其中一片：29k 的全景（29696 × 14848）裁出世界方位 90° 左右各 46.988°（相鄰兩片重疊的部分漸變接起來）、仰角 -4.02° 到 13.00°",
+        "bytes": 13105235,
+        "sha256": "8a56690c3eae2be535972a9c3cf492c2cde47fc212acb51d78e337135974a5b7",
+        "container": "KTX2，UASTC HDR 4x4，Zstandard 壓縮，含 mipmap；在主力裝置上轉成 BC6H",
+        "source": {
+          "downloadUrl": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/16k%2B/farmland_overcast_29k.hdr",
+          "bytes": 1183537337,
+          "sha256": "915f62bde294c8aa548dc7e7b5808cda003a4430f8ef6fda1b5830bbeec85429"
+        },
+        "settings": {
+          "format": "cUASTC_HDR_4x4",
+          "effort": 2,
+          "mipmaps": true,
+          "yFlip": true,
+          "supercompression": "zstd",
+          "ceiling": 32752
+        },
+        "clampedPixels": 0,
+        "sourceMax": 23.88,
+        "roundTrip": {
+          "medianRelativeError": 0.00277,
+          "sumRatio": 0.99981,
+          "comparedValues": 32651424
+        }
+      },
+      {
+        "file": "horizon-back.ktx2",
+        "what": "地平線帶一圈四片的其中一片：29k 的全景（29696 × 14848）裁出世界方位 180° 左右各 46.988°（相鄰兩片重疊的部分漸變接起來）、仰角 -4.02° 到 13.00°",
+        "bytes": 12929972,
+        "sha256": "2c7981b5ef10bc3e6d62bccb4d37ef107737b1a08ed26cc25e3c388de8a0f60b",
+        "container": "KTX2，UASTC HDR 4x4，Zstandard 壓縮，含 mipmap；在主力裝置上轉成 BC6H",
+        "source": {
+          "downloadUrl": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/16k%2B/farmland_overcast_29k.hdr",
+          "bytes": 1183537337,
+          "sha256": "915f62bde294c8aa548dc7e7b5808cda003a4430f8ef6fda1b5830bbeec85429"
+        },
+        "settings": {
+          "format": "cUASTC_HDR_4x4",
+          "effort": 2,
+          "mipmaps": true,
+          "yFlip": true,
+          "supercompression": "zstd",
+          "ceiling": 32752
+        },
+        "clampedPixels": 0,
+        "sourceMax": 6.88,
+        "roundTrip": {
+          "medianRelativeError": 0.00254,
+          "sumRatio": 0.99988,
+          "comparedValues": 32651424
+        }
+      },
+      {
+        "file": "horizon-left.ktx2",
+        "what": "地平線帶一圈四片的其中一片：29k 的全景（29696 × 14848）裁出世界方位 270° 左右各 46.988°（相鄰兩片重疊的部分漸變接起來）、仰角 -4.02° 到 13.00°",
+        "bytes": 12605073,
+        "sha256": "bfa8dfefd3a24c0dca8477238d42d3e613cd4c6aadb257284280a46085c2c114",
+        "container": "KTX2，UASTC HDR 4x4，Zstandard 壓縮，含 mipmap；在主力裝置上轉成 BC6H",
+        "source": {
+          "downloadUrl": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/16k%2B/farmland_overcast_29k.hdr",
+          "bytes": 1183537337,
+          "sha256": "915f62bde294c8aa548dc7e7b5808cda003a4430f8ef6fda1b5830bbeec85429"
+        },
+        "settings": {
+          "format": "cUASTC_HDR_4x4",
+          "effort": 2,
+          "mipmaps": true,
+          "yFlip": true,
+          "supercompression": "zstd",
+          "ceiling": 32752
+        },
+        "clampedPixels": 0,
+        "sourceMax": 2.42,
+        "roundTrip": {
+          "medianRelativeError": 0.0021,
+          "sumRatio": 0.9999,
+          "comparedValues": 32651424
+        }
+      }
+    ]
+  },
+  "sunEstimate": {
+    "note": "陰天：這張圖沒有日盤，方向光是 0（不估太陽、不加強影子），天球整張都是環境光。證據：地平線以上最亮的像素只有天空中位數的幾倍（晴天是幾十萬倍），而且照晴天那條路估太陽（estimateSun）會被拒絕；天空亮度的方向性很低（晴天超過 0.6）。",
+    "found": false,
+    "peakLuminance": 19.013,
+    "peakImageAzimuthDeg": 279.23,
+    "peakImageElevationDeg": 8.35,
+    "skyMedianLuminance": 1.1667,
+    "peakOverSky": 16.3,
+    "maxPeakOverSky": 100,
+    "lateralAnisotropy": 0.1227,
+    "estimateSunDeclines": "最亮的地方不像日盤（最亮處是周圍天空的 19 倍，要 1000 倍以上；九成的能量在半徑 8.71° 裡，要 3° 以內）：請人工指定太陽的方向",
+    "estimateSunMinPeakOverSky": 1000
+  }
+}

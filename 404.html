@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="data:," />
+    <title>找不到這一頁</title>
+    <style>
+      :root { color-scheme: dark; }
+      body { margin: 0; padding: 24px 16px 48px; background: #101214; color: #e6e8ea; font: 15px/1.7 system-ui, "Microsoft JhengHei", sans-serif; }
+      main { max-width: 56rem; margin: 0 auto; }
+      h1 { font-size: 1.4rem; margin: 0 0 8px; }
+      h2 { font-size: 1.1rem; margin: 32px 0 8px; color: #2dd4bf; }
+      a { color: #5eead4; }
+      table { width: 100%; border-collapse: collapse; font-size: 13px; }
+      th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid #2a2f35; }
+      tbody tr:hover { background: #181c20; }
+      code, pre { font: 12px/1.5 ui-monospace, Consolas, monospace; }
+      pre { white-space: pre-wrap; background: #181c20; padding: 12px; border-radius: 4px; }
+      .muted { color: #9aa3ab; }
+      @media (max-width: 600px) { th:nth-child(4), td:nth-child(4) { display: none; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>找不到這一頁</h1>
+      <p>網址可能打錯了，或這一頁沒有發布。</p>
+      <p><a id="home" href="/">回到飛行頁</a></p>
+    </main>
+    <script>
+      (function () {
+        var root = '/';
+        if (location.hostname.slice(-10) === '.github.io') root = '/' + (location.pathname.split('/')[1] || '') + '/';
+        document.getElementById('home').setAttribute('href', root);
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>手把設定｜四面停懸訓練模擬器</title>
+    <link rel="icon" href="data:," />
+    <style>:root{--lightningcss-light: ;--lightningcss-dark:initial;color-scheme:dark;--bg:#101214;--panel:#181b1f;--line:#2b3036;--text:#e6e8ea;--muted:#a9b0b6;--accent:#2bb3a3}body{background:var(--bg);color:var(--text);margin:0;font:15px/1.6 system-ui,Microsoft JhengHei,sans-serif}main{max-width:1080px;margin:0 auto;padding:24px 16px 48px}h1{margin:0 0 8px;font-size:22px}h2{margin:0 0 8px;font-size:16px}p{margin:0 0 12px}.muted{color:var(--muted)}section{background:var(--panel);border:1px solid var(--line);border-radius:8px;margin-top:20px;padding:16px}#setup-connection{border:1px dashed var(--accent);border-radius:8px;padding:12px;font-size:16px}#setup-raw-axes{font-variant-numeric:tabular-nums;color:var(--muted)}table{border-collapse:collapse;width:100%}th,td{border-bottom:1px solid var(--line);text-align:left;padding:6px 8px;font-weight:400}thead th{color:var(--muted)}input[type=number]{width:5.5em}input,select,button{font:inherit;color:var(--text);border:1px solid var(--line);background:#20242a;border-radius:6px;padding:4px 8px}button{cursor:pointer;margin:0 8px 8px 0}button:hover,select:hover,input:hover{border-color:var(--accent)}output{font-variant-numeric:tabular-nums}#setup-said,#setup-buttons-said{min-height:1.6em;color:var(--accent)}[data-field=warning]{color:#f2b24c}a{color:var(--accent)}</style>
+    <script type="module" crossorigin src="./assets/gamepad-setup-lrawv3XI.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-P2Xu9kJm.js">
+    <link rel="modulepreload" crossorigin href="./assets/gamepadText-DDipZGzQ.js">
+    <link rel="modulepreload" crossorigin href="./assets/notRecorded-U8o28lkj.js">
+    <link rel="modulepreload" crossorigin href="./assets/gamepadProbe-PwRmJIUH.js">
+    <link rel="modulepreload" crossorigin href="./assets/gamepadSource-BhQjnkhK.js">
+  </head>
+  <body>
+    <main>
+      <h1>手把設定</h1>
+      <p class="muted">美國手：左桿上下是油門、左右是偏航；右桿上下是俯仰、左右是橫滾。這一頁改的設定存在這個瀏覽器裡，<a href="./">飛行頁</a>下一個回合（按 R）起用。</p>
+
+      <section aria-label="連接">
+        <h2>連接</h2>
+        <p id="setup-connection">準備中…</p>
+        <p id="setup-raw-axes"></p>
+        <p id="setup-notice" class="muted"></p>
+      </section>
+
+      <section aria-label="對應與校正">
+        <h2>對應與校正</h2>
+        <p class="muted">每一軸可以改：讀手把的第幾軸、方向要不要反過來、桿放開時的讀值（中心）、推到底時的讀值（最小、最大）、多小的量當成 0（死區）、桿在中間附近要多鈍（曲線，0 到 0.9）。曲線越大，桿在中間附近越不靈敏、好微調，推到底還是滿的；0 是直線。最右邊是照現在的設定算出來的量：放開要是 0.00，往上、往右推到底要是 1.00。</p>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>手把的軸</th>
+              <th>反過來</th>
+              <th>中心</th>
+              <th>最小</th>
+              <th>最大</th>
+              <th>死區</th>
+              <th>曲線</th>
+              <th>算出來的量</th>
+            </tr>
+          </thead>
+          <tbody id="setup-rows"></tbody>
+        </table>
+        <p style="margin-top: 12px">
+          <button type="button" id="setup-center">把現在的位置設成中心</button>
+          <button type="button" id="setup-range">記錄行程</button>
+          <button type="button" id="setup-reset">還原成標準對應</button>
+        </p>
+        <p id="setup-said" role="status" aria-live="polite"></p>
+      </section>
+
+      <section aria-label="按鈕">
+        <h2>按鈕</h2>
+        <p class="muted">口誦與成績單各用控制器上的哪一顆按鈕。飛行頁與方向感反射練習頁照這裡的設定讀；改了就存，飛行頁下一個回合（按 R）起用。</p>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>現在是</th>
+              <th>此刻</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="setup-button-rows"></tbody>
+        </table>
+        <p id="setup-button-note" class="muted" style="margin-top: 12px"></p>
+        <p id="setup-buttons-said" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+  </body>
+</html>

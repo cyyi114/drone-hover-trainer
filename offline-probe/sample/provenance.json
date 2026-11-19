@@ -1,0 +1,55 @@
+{
+  "file": "je_gray_park_2k.ktx2",
+  "bytes": 2356996,
+  "sha256": "35093300448a472ff9b7ba0256762f7eeb559bb765f5f457f53d68d6bccfdbfd",
+  "container": "KTX2，UASTC HDR 4x4，Zstandard 壓縮，含 mipmap",
+  "source": {
+    "name": "J&E Gray Park",
+    "author": "Greg Zaal",
+    "page": "https://polyhaven.com/a/je_gray_park",
+    "license": "CC0 1.0",
+    "licenseEvidence": "https://polyhaven.com/license（Poly Haven 全站素材都是 CC0）",
+    "downloadUrl": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/je_gray_park_2k.hdr",
+    "bytes": 6129780,
+    "sha256": "de2505b17ecd79af84599fdd034b4abde8a604b4b52b6410918f6e7cb6192e53",
+    "downloadedOn": "2026-11-16"
+  },
+  "encoder": {
+    "name": "Basis Universal 官方的 WebAssembly 編碼器",
+    "version": "v2_50",
+    "license": "Apache-2.0",
+    "files": [
+      {
+        "url": "https://raw.githubusercontent.com/BinomialLLC/basis_universal/v2_50/webgl/encoder/build/basis_encoder.js",
+        "sha256": "d225ce1e7012609bcfbe338351c8778d95eb1c19d404314d513b2b2df94a6ffb"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/BinomialLLC/basis_universal/v2_50/webgl/encoder/build/basis_encoder.wasm",
+        "sha256": "48d4e39ccaa1e290a17d00c13b353a728227bb439108d5e6c944fe6ab80552db"
+      }
+    ]
+  },
+  "command": "npm run probe:offline:sample",
+  "settings": {
+    "format": "cUASTC_HDR_4x4",
+    "effort": 2,
+    "mipmaps": true,
+    "yFlip": true,
+    "supercompression": "zstd"
+  },
+  "radiance": {
+    "note": "編碼前把超過上限的像素值夾住；不夾的話編碼器會把整張等比縮小（原圖最大值超過半精度浮點的上限 65504）。夾掉的太陽亮度之後由方向光補。",
+    "halfFloatMax": 65504,
+    "ceiling": 32768,
+    "sourceMax": 193536,
+    "clampedPixels": 11,
+    "totalPixels": 2097152
+  },
+  "roundTrip": {
+    "note": "編完用同一個模組解回最大那一層（半精度 RGBA），和夾住後的原圖逐分量比。",
+    "medianRelativeError": 0.00739,
+    "sumRatio": 0.99773,
+    "comparedValues": 6291441,
+    "limit": 0.05
+  }
+}

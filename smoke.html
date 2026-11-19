@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>冒煙場景｜四面停懸訓練模擬器</title>
+    <link rel="icon" href="data:," />
+    <style>:root{--lightningcss-light: ;--lightningcss-dark:initial;color-scheme:dark;--bg:#101214;--panel:#181b1f;--line:#2b3036;--text:#e6e8ea;--muted:#a9b0b6;--accent:#2bb3a3;--warn:#e0a84a}body{background:var(--bg);color:var(--text);margin:0;font:14px/1.6 system-ui,Microsoft JhengHei,sans-serif}main{max-width:1100px;margin:0 auto;padding:16px}body.embedded main{padding:0}body.embedded .hide-when-embedded{display:none}h1{margin:0 0 4px;font-size:20px}p{margin:0 0 8px}.muted{color:var(--muted)}a{color:var(--accent)}#view{aspect-ratio:16/9;background:#000;width:512px;max-width:100%;display:block}#smoke-status[data-state=ok]{color:var(--accent)}#smoke-status[data-state=failed]{color:var(--warn)}#smoke-checks{margin:4px 0 8px;padding-left:1.4em}#smoke-checks li[data-ok=false]{color:var(--warn)}#smoke-result{display:none}table{border-collapse:collapse;width:100%;margin-top:12px}th,td{border:1px solid var(--line);text-align:left;vertical-align:top;padding:6px 8px}th{color:var(--muted);font-weight:600}tbody tr:hover{background:var(--panel)}td[data-state=ok]{color:var(--accent)}td[data-state=failed]{color:var(--warn)}iframe{background:#000;border:0;width:256px;height:144px;display:block}button{font:inherit;border:1px solid var(--accent);background:var(--accent);color:#06110f;cursor:pointer;border-radius:6px;padding:6px 14px;font-weight:600}button:hover{background:#37c7b6}button:disabled{opacity:.5;cursor:default}</style>
+    <script type="module" crossorigin src="./assets/smoke-2E2pFclm.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-P2Xu9kJm.js">
+    <link rel="modulepreload" crossorigin href="./assets/opaque-Bb8yZxMa.js">
+    <link rel="modulepreload" crossorigin href="./assets/readCanvas-B64av70t.js">
+    <link rel="modulepreload" crossorigin href="./assets/field-5Ba68lkn.js">
+    <link rel="modulepreload" crossorigin href="./assets/exactMath-YJr5tnJ6.js">
+    <link rel="modulepreload" crossorigin href="./assets/shotParams-CHEKTDAV.js">
+    <link rel="modulepreload" crossorigin href="./assets/sky-D2GkNgTQ.js">
+    <link rel="modulepreload" crossorigin href="./assets/pavement-BbVPfc4T.js">
+    <link rel="modulepreload" crossorigin href="./assets/srgb-BYLCyAwo.js">
+    <link rel="modulepreload" crossorigin href="./assets/sceneOutput-CqeMyVQQ.js">
+    <link rel="modulepreload" crossorigin href="./assets/types-Co-dhjSL.js">
+    <link rel="modulepreload" crossorigin href="./assets/buildInfo-2GvMuhpz.js">
+    <link rel="modulepreload" crossorigin href="./assets/notRecorded-U8o28lkj.js">
+    <link rel="modulepreload" crossorigin href="./assets/consoleCapture-CGtWRzT-.js">
+  </head>
+  <body>
+    <main>
+      <!-- 單一場景：網址帶 ?scene=<名字>。 -->
+      <section id="single" hidden>
+        <h1 id="smoke-title" class="hide-when-embedded"></h1>
+        <p id="smoke-what" class="muted hide-when-embedded"></p>
+        <canvas id="view" width="512" height="288"></canvas>
+        <p id="smoke-status" data-state="pending" class="hide-when-embedded">準備中…</p>
+        <ul id="smoke-checks" class="hide-when-embedded"></ul>
+        <p class="hide-when-embedded"><a href="smoke.html">回到全部場景</a></p>
+        <pre id="smoke-result"></pre>
+      </section>
+
+      <!-- 總表：不帶 scene 參數。一個場景接一個場景，在兩個後端各畫一次。 -->
+      <section id="overview" hidden>
+        <h1>冒煙場景</h1>
+        <p class="muted">每一項必要的畫面能力各有一個最小場景，在 WebGPU 與 WebGL 2 兩個後端各畫一次，看畫出來的像素對不對。</p>
+        <p id="overview-runtime" class="muted"></p>
+        <p>
+          <button id="overview-run" type="button">全部跑一次</button>
+          <span id="overview-status" data-state="pending" class="muted"></span>
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>能力</th>
+              <th>WebGPU</th>
+              <th>WebGL 2</th>
+            </tr>
+          </thead>
+          <tbody id="overview-rows"></tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

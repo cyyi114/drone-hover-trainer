@@ -1,0 +1,37 @@
+{
+  "file": "quadrants.ktx2",
+  "bytes": 2562,
+  "sha256": "b5a73e7613f86508ca65b0d61d724d78fad82a83c8aa2f98f0fd6f6b34874933",
+  "container": "KTX2，UASTC LDR 4x4，sRGB，Zstandard 壓縮，含 mipmap",
+  "source": {
+    "what": "自製：256 × 256，四個象限各一個顏色（顏色定義在 src/render/smoke/quadrants.ts）",
+    "license": "自製，隨專案"
+  },
+  "encoder": {
+    "name": "Basis Universal 官方的 WebAssembly 編碼器",
+    "version": "v2_50",
+    "license": "Apache-2.0",
+    "files": [
+      {
+        "url": "https://raw.githubusercontent.com/BinomialLLC/basis_universal/v2_50/webgl/encoder/build/basis_encoder.js",
+        "sha256": "d225ce1e7012609bcfbe338351c8778d95eb1c19d404314d513b2b2df94a6ffb"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/BinomialLLC/basis_universal/v2_50/webgl/encoder/build/basis_encoder.wasm",
+        "sha256": "48d4e39ccaa1e290a17d00c13b353a728227bb439108d5e6c944fe6ab80552db"
+      }
+    ]
+  },
+  "command": "npm run smoke:sample",
+  "settings": {
+    "format": "cUASTC_LDR_4x4",
+    "perceptual": true,
+    "mipmaps": true,
+    "yFlip": true,
+    "supercompression": "zstd"
+  },
+  "roundTrip": {
+    "worstChannelErrorAtQuadrantCentres": 0,
+    "limit": 8
+  }
+}

@@ -1,0 +1,1 @@
+function e(e){let t=e/255;return t<=.04045?t/12.92:((t+.055)/1.055)**2.4}export{e as t};
