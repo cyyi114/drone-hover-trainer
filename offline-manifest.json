@@ -1,11 +1,11 @@
 {
   "formatVersion": 1,
-  "version": "0.0.0+a5d33c3",
+  "version": "0.0.0+1ec4913",
   "shell": [
     {
       "path": "LICENSES.html",
-      "bytes": 5759,
-      "sha256": "bd3d19a62a1f4d0744f59fdcbb161e497f9567aa02fdc932c60cbc138cb4eb13"
+      "bytes": 6078,
+      "sha256": "69b5dac018bde1a6cd9ccb82b61685e90f8047b237dc7f82a6b904492c1b984b"
     },
     {
       "path": "assets/aaToggle-CmCDK7Gp.js",
@@ -13,9 +13,14 @@
       "sha256": "779027f93b30a305ebdb8240a0c74f71489a7f2c23cfba662644bc6c81ac79cc"
     },
     {
-      "path": "assets/airframe-C724vmKE.js",
-      "bytes": 479,
-      "sha256": "55143e74fc487e40e949be8d5b6f5005ebee11f784562800e972a9a2b50dc56b"
+      "path": "assets/airframe-C5hCgLqs.js",
+      "bytes": 157,
+      "sha256": "fa1566aef62ef5d54344ee56970bb7f72b270a7e794b8cb2b6b31696f1c7b80d"
+    },
+    {
+      "path": "assets/airframePose-CPO5fa31.js",
+      "bytes": 367,
+      "sha256": "69c2f9bba81e604d109a589ebfdb86e86fdae115b91fae00be18608b93df1e15"
     },
     {
       "path": "assets/assetPack-l0ohciP4.js",
@@ -23,9 +28,9 @@
       "sha256": "cbff75692309f4781cef69a96810f3c01cccb5685e65c072d49e15490f8e3aab"
     },
     {
-      "path": "assets/baselineNotice-BawW0GZR.js",
-      "bytes": 16126,
-      "sha256": "9bdbf33251a98f4b5e7bb4e907a0ed829a941a5df904bd1adc073973d500130f"
+      "path": "assets/baselineNotice-Cj_95IAW.js",
+      "bytes": 18702,
+      "sha256": "422bc831496a1b89bb47e050cde6dc3f59334ffd6becba8d1ac4903da7b5b447"
     },
     {
       "path": "assets/baselineNotice-D2F8p2Ku.css",
@@ -48,9 +53,9 @@
       "sha256": "d860d9ff8d61d4f4ff8dbfa810540dfc174dfc3f34abd22084f34ecbe304545f"
     },
     {
-      "path": "assets/buildInfo-DEWwOTVQ.js",
+      "path": "assets/buildInfo-D4az27LE.js",
       "bytes": 37,
-      "sha256": "97209133c907bef5ff4ee53f76d8a24495ab5bb1f7cfc10c0fffea657ef621e0"
+      "sha256": "57a84a8bb12b202c2c8295f016c162455a500bf31ca9681f493c42d8313ce1ff"
     },
     {
       "path": "assets/canvasSize-BfUx9E42.js",
@@ -63,14 +68,29 @@
       "sha256": "08df22f4696080e3ec7721abea253e40b0d479e49fa797c52133e20b36fcc0ed"
     },
     {
-      "path": "assets/drill-CMub3vKh.js",
-      "bytes": 22732,
-      "sha256": "8b737965d9e46c35440c5a15ffb026d58193b8e2ce33ca11b9172170ec8cb1e2"
+      "path": "assets/crown-0-BKFl00hb.png",
+      "bytes": 94616,
+      "sha256": "3185d010e078fcbab20c0729a1b0fc81f1405f4f8b9e4226529af13bb6dff10d"
     },
     {
-      "path": "assets/drillArchive-Cm5rkqRE.js",
-      "bytes": 939,
-      "sha256": "ad72c22e08a87079ce27ed824d94b8859217b0319b567d406e64e0c16e9b9533"
+      "path": "assets/crown-1-DmBy4U3Z.png",
+      "bytes": 113746,
+      "sha256": "5f3ea7ed94c0b5296414b5bbc39de3b8c68de969f8420323a4870963548c28e9"
+    },
+    {
+      "path": "assets/crown-2-CGdq85v6.png",
+      "bytes": 104909,
+      "sha256": "a458f24333dc7c25e2a9e8d4e7e0a54f9b83bfd88e110564305e8a1ef71f528a"
+    },
+    {
+      "path": "assets/drill-Bijsq_t2.js",
+      "bytes": 23530,
+      "sha256": "98068f26b2b5f6151d8f4e65f971da156abf364ab1f782e6a7725e0249fffb92"
+    },
+    {
+      "path": "assets/drillArchive-D2quKIKf.js",
+      "bytes": 937,
+      "sha256": "0300df4c1a70887d1eba485d4426c719e0c5ddc17c27611c0ef5d5757362101c"
     },
     {
       "path": "assets/exactMath-YJr5tnJ6.js",
@@ -78,14 +98,14 @@
       "sha256": "dfc85af1ba3c55ff4753bcacf2f03de968f0cdac5bb5ecbbff497b2aa4b847e6"
     },
     {
-      "path": "assets/examScene-CqGn9aDy.js",
-      "bytes": 21350,
-      "sha256": "a85196e5a271d253b622da971a453e1744e73d3ae2561cf118f63f16eeee278b"
+      "path": "assets/examScene-ymHuXv7D.js",
+      "bytes": 22469,
+      "sha256": "999656ded6a29eb132249a38d961ebe91caaad7268c41754b74c0da8f46ec275"
     },
     {
-      "path": "assets/feel-Ck7YxesP.js",
-      "bytes": 6898,
-      "sha256": "1372e1050a912ca0f0714a1eb3adb953884f6336b8858cfde9a79b0aab815634"
+      "path": "assets/feel-Dsfb-WjA.js",
+      "bytes": 6903,
+      "sha256": "ff502a97cfb525ef6cbf94d5fb323c64435147f589381714d1a807e6ebbaa5bb"
     },
     {
       "path": "assets/feelStorage-lmMSIJzZ.js",
@@ -108,9 +128,9 @@
       "sha256": "d340f075baf6a43daa7bc693cad1a1ebe86876880427308f5474fa751f9488b0"
     },
     {
-      "path": "assets/gamepad-setup-D3dnrAfW.js",
-      "bytes": 6023,
-      "sha256": "e1041d5fbb75093035c92d35e5eb758778cfe4be29d89092bf042dbca5a07421"
+      "path": "assets/gamepad-setup-CaaU5-5a.js",
+      "bytes": 7331,
+      "sha256": "4d1ec1849346a091d0d498acd792183920f976013d9248f4be50e5f7ad8e7e01"
     },
     {
       "path": "assets/gamepadProbe-PwRmJIUH.js",
@@ -118,14 +138,19 @@
       "sha256": "deb07de223ed3e10d91ca714fb8a5d02f40c69953f2207e31a0cf8b224b75db7"
     },
     {
-      "path": "assets/gamepadSource-Dyqhi6r0.js",
+      "path": "assets/gamepadSource-CFTTkx3g.js",
       "bytes": 1008,
-      "sha256": "0e48851ac909a665a412dd67a51d6d654efb6dceb172b224ec5309726d710602"
+      "sha256": "034f3750d4213874beeac5c10fe7d3586762c509a022cfdb86d2b116965f789b"
     },
     {
-      "path": "assets/gamepadText-hYeHPn19.js",
-      "bytes": 8526,
-      "sha256": "f99d9c822a338817295c965ee595fd15df4396b3e13566250bfb327545dd88f0"
+      "path": "assets/gamepadText-BCCAYV1T.js",
+      "bytes": 8547,
+      "sha256": "370a4e0bc40d7530bdc72074617b4952708570cb17e1abb7b3ff1737e0cbfb9d"
+    },
+    {
+      "path": "assets/hexAirframeMesh-CSBfndlK.js",
+      "bytes": 37612,
+      "sha256": "551fe53d9d38a3acfffe55362177f7aae139d600dadfc5af821e0650b87f70cf"
     },
     {
       "path": "assets/honestyNotices-BFHBd_Gd.js",
@@ -133,9 +158,14 @@
       "sha256": "17b281c2817e3828b57ee07449f13e586e0a8e49c017c152f3334da6309ea47e"
     },
     {
-      "path": "assets/index-DohQjl0z.js",
-      "bytes": 66111,
-      "sha256": "4cf25a51b22cb1e7503d82e5ac8180391c58d20177d9b74aa484c44737e98217"
+      "path": "assets/index-Bm5zum5i.js",
+      "bytes": 76217,
+      "sha256": "8b38b1adad1ee96c8328d75c13b2126f35007fca987808937e27d63026779a9c"
+    },
+    {
+      "path": "assets/index-dxLLeB-_.css",
+      "bytes": 3101,
+      "sha256": "2fd5ce378ad73157ddd5e5bceaf6859326e338cf00961e04b274aab998039903"
     },
     {
       "path": "assets/modulepreload-polyfill-P2Xu9kJm.js",
@@ -153,14 +183,9 @@
       "sha256": "4e3018898184d8374ada6b3500e43dfa97da8534bb0cfe468a4261f42e39e673"
     },
     {
-      "path": "assets/opaque-WlH6sh-T.js",
-      "bytes": 911307,
-      "sha256": "606bf112cee460a20243a0f583c0b98019dd808643282e55de3d49fb1eb0daf9"
-    },
-    {
-      "path": "assets/pavement-C3bGNABi.js",
-      "bytes": 37512,
-      "sha256": "952b19fd0dc4e7194e6b0c0e9ecf677d5712405d4a26f814c1e8c207b62dbb47"
+      "path": "assets/opaque-BR0wwoFX.js",
+      "bytes": 912675,
+      "sha256": "55dbbc29020960def13bbd8307478f83729b7411d4d50d0d0bdefd04c77e8780"
     },
     {
       "path": "assets/readCanvas-B64av70t.js",
@@ -168,49 +193,54 @@
       "sha256": "dae5613d0bd3f7be1612a03e08dec73249047233f045335586b814b92ce04d3d"
     },
     {
-      "path": "assets/records-KG7SGdUd.js",
-      "bytes": 7624,
-      "sha256": "2071eaf41fdce116ed5176193e513d7473834fee7ca22b019b7b1f06b4a3cde0"
+      "path": "assets/recordStorage-0mpPBT9D.js",
+      "bytes": 30888,
+      "sha256": "9c4e03f9e4790b4cfb4710ac878406a946bf39b476bcc09eb5cf089e932af9cf"
     },
     {
-      "path": "assets/replay-jv-IMxwt.js",
-      "bytes": 1411,
-      "sha256": "a0a26d9b3e280f6114ec29b87cf203d2ce7bc6e39b58ba27bead8cf6519199e5"
+      "path": "assets/records-BZtmmgZB.js",
+      "bytes": 8939,
+      "sha256": "36c68c358a8849cc5a856f13762ce596ac0dd8100dae3c8b62f733c1e290613a"
     },
     {
-      "path": "assets/replayText-BVCrT5TE.js",
-      "bytes": 40750,
-      "sha256": "48d2841bc594e4ddd2e03db90aca561951b8b58e0efe6ec3ec18b0e42cf01d74"
+      "path": "assets/replayText-D4JS-X70.js",
+      "bytes": 73310,
+      "sha256": "7ab7c8ef0f6f8dfb08b6163e8d73beea2f837d7db7bf6eda9a91309e492cc8d6"
     },
     {
-      "path": "assets/roundRecord-B0haNVEh.js",
-      "bytes": 2933,
-      "sha256": "1dc42613e20a17c8e6c91cb6d5eee4cd420bbe1562381f98ba9331c088f61327"
+      "path": "assets/replayText-gQPOzL3o.css",
+      "bytes": 749,
+      "sha256": "8b992508d44b918e5adeeedd11b38b3a867d75f6ef00e23e92125e6b9bbae716"
     },
     {
-      "path": "assets/roundRecorder-DKAqqgz9.js",
+      "path": "assets/rolldown-runtime-DK3Fl9T5.js",
+      "bytes": 158,
+      "sha256": "a526d1bb3288ef04d001028843220a24b0867a4edf8c685b69506d6525af36ff"
+    },
+    {
+      "path": "assets/roundRecord-B4c1VXu4.js",
+      "bytes": 4300,
+      "sha256": "e2f0a766dd78f5c6f54a86c7f7de40c76c042d73fd47afe75f57fbe6a1e00d28"
+    },
+    {
+      "path": "assets/roundRecorder-BpnprAAQ.js",
       "bytes": 1120,
-      "sha256": "3d62f66fee671d31c7e17fa58b3d4807345c2479d1a0d3ebe1d2a47b5c3bc954"
+      "sha256": "75ae2c2c10863dbea17d4042f6b811fdbe8c2c7b57d1819648e90ac6fe34e477"
     },
     {
-      "path": "assets/savedDrill-DcKkDwUv.js",
-      "bytes": 29797,
-      "sha256": "7ff0436d873f621389c75b00f2c6462dbe46298d25d745f7f8e006dd62c30df2"
+      "path": "assets/sceneOutput-BS5fxqUD.js",
+      "bytes": 7584,
+      "sha256": "7137307e95cf5ef6d45d119692d1a1c64a5d94221e6d9619c15583dfb4976035"
     },
     {
-      "path": "assets/sceneOutput-CUjHDnLM.js",
-      "bytes": 7589,
-      "sha256": "60ac0916733e48a7c4d0bedc57d3cd05c70f36425e02cb0157eb7833783dca60"
+      "path": "assets/shotParams-CzbzTcY3.js",
+      "bytes": 24107,
+      "sha256": "5dcd9b106353d67cb87f1eae4455fac320c309e524408f7fed3120016fcbab98"
     },
     {
-      "path": "assets/shotParams-C3J2Ov8H.js",
-      "bytes": 23999,
-      "sha256": "9cbf0dea42895b876288e77c78bd21c8f2b5fe50e60d3a708bda9c26a8bfb5cf"
-    },
-    {
-      "path": "assets/shotPlan-BeM2vSw1.js",
+      "path": "assets/shotPlan-CKQc2l3h.js",
       "bytes": 1201,
-      "sha256": "aaf4e5fb5297227bbddd83f350ad8f22d43196718919746742ab63e7319cbe52"
+      "sha256": "8cc949a668a66845f71cf80217b27bf855da39e55885de7bff2df06b8629bb5a"
     },
     {
       "path": "assets/sim-Bm1cyjHK.js",
@@ -218,9 +248,9 @@
       "sha256": "63a1059a87207825d4fe1c33f47f658b6b57f2c3cc005fd7d597a0e6d1862eba"
     },
     {
-      "path": "assets/sky-BeVhpgvg.js",
-      "bytes": 8962,
-      "sha256": "8a93fb6bd5bdb48e556df5c843334a16ed87b1e6aef9eda41d2853dc56f49198"
+      "path": "assets/sky-C_l9aXnQ.js",
+      "bytes": 9035,
+      "sha256": "19bc99102ba3b751bc513c3f5d41509e83a69fa4aca561501c2ca15844ec32b7"
     },
     {
       "path": "assets/tierRenderPath-DTyecvB6.js",
@@ -228,9 +258,9 @@
       "sha256": "868eeed600a732b2904f4193a85c9769928810b3b8cce2276abeee6f827746e0"
     },
     {
-      "path": "assets/trainingAirframe-Cz7pIFBm.js",
-      "bytes": 2147,
-      "sha256": "77f38ce99878f86a9b391d1f9b1dee26fb21bc3c1b43db5b61da12eb7a2fe9af"
+      "path": "assets/trainingAirframe-DK4JaenJ.js",
+      "bytes": 2941,
+      "sha256": "01b88a0f5539c37a17627a972a7805c7dbf2c5e543c350a0ecba022697f95b86"
     },
     {
       "path": "assets/videoRecorder-CLJdw37K.js",
@@ -239,148 +269,164 @@
     },
     {
       "path": "drill.html",
-      "bytes": 4228,
-      "sha256": "68dbe2b025a623de1cbfebca37595a2e4deffc101e117a2d87c6cd23a2d99eff"
+      "bytes": 4332,
+      "sha256": "6a42c8c421531529522923f823ca1d6b20626cfc3b0eff4ab14ff02726d5ce41"
     },
     {
       "path": "feel.html",
-      "bytes": 6041,
-      "sha256": "05b47bb75ddc2149dd786263865be88d0578556f96704dc60a55eb2a6b26a0bf"
+      "bytes": 5963,
+      "sha256": "63c6654f0fcbbc0213129a00393c969ee25517eb7f24adbe84be9f577b2703c6"
     },
     {
       "path": "gamepad-setup.html",
-      "bytes": 5620,
-      "sha256": "b0927303dbdf5b33e564a90c7def2cda797e1bb06bbfb92cf52cd2b86bd526a0"
+      "bytes": 7149,
+      "sha256": "2e8e308ee44cb576710dc1493e37f0cea8310a1aec8b849a6b8b1c6558b7bb4b"
     },
     {
       "path": "index.html",
-      "bytes": 10339,
-      "sha256": "7346dbdcd538a84ca6cddd2b488ac86e8280c7c46ebdccbf6e6efcc63685b2b2"
+      "bytes": 10598,
+      "sha256": "4a53703a7ff386c57613709399465e117f68c2561ff5f08894485f06e24e37da"
     },
     {
       "path": "records.html",
-      "bytes": 6562,
-      "sha256": "d66655864efcd2b3ec495baa418ea4c52253a4eb2064f64d152d47b35e491206"
+      "bytes": 7231,
+      "sha256": "f17a42b71a478f8aedf4f9386165cac718d83756b956c3a5964c68299edb15db"
     }
   ],
   "pageDeps": {
     "index.html": [
       "assets/aaToggle-CmCDK7Gp.js",
-      "assets/airframe-C724vmKE.js",
+      "assets/airframe-C5hCgLqs.js",
+      "assets/airframePose-CPO5fa31.js",
       "assets/assetPack-l0ohciP4.js",
-      "assets/baselineNotice-BawW0GZR.js",
+      "assets/baselineNotice-Cj_95IAW.js",
       "assets/baselineNotice-D2F8p2Ku.css",
       "assets/basis_transcoder-VXdx5NbI.wasm",
       "assets/basis_transcoder-o4Hde_L7.js",
       "assets/browser-BktjcKxh.js",
-      "assets/buildInfo-DEWwOTVQ.js",
+      "assets/buildInfo-D4az27LE.js",
       "assets/canvasSize-BfUx9E42.js",
       "assets/consoleCapture-CGtWRzT-.js",
+      "assets/crown-0-BKFl00hb.png",
+      "assets/crown-1-DmBy4U3Z.png",
+      "assets/crown-2-CGdq85v6.png",
       "assets/exactMath-YJr5tnJ6.js",
-      "assets/examScene-CqGn9aDy.js",
+      "assets/examScene-ymHuXv7D.js",
       "assets/feelStorage-lmMSIJzZ.js",
       "assets/field-Fs0YcU2k.js",
       "assets/flightSoundWorklet-DkRFiClr.js",
       "assets/frameLock-D5gDaPEt.js",
       "assets/gamepadProbe-PwRmJIUH.js",
-      "assets/gamepadSource-Dyqhi6r0.js",
-      "assets/gamepadText-hYeHPn19.js",
+      "assets/gamepadSource-CFTTkx3g.js",
+      "assets/gamepadText-BCCAYV1T.js",
+      "assets/hexAirframeMesh-CSBfndlK.js",
       "assets/honestyNotices-BFHBd_Gd.js",
-      "assets/index-DohQjl0z.js",
+      "assets/index-Bm5zum5i.js",
+      "assets/index-dxLLeB-_.css",
       "assets/modulepreload-polyfill-P2Xu9kJm.js",
       "assets/notRecorded-U8o28lkj.js",
       "assets/offlineStore-CZZIKs1B.js",
-      "assets/opaque-WlH6sh-T.js",
-      "assets/pavement-C3bGNABi.js",
+      "assets/opaque-BR0wwoFX.js",
       "assets/readCanvas-B64av70t.js",
-      "assets/replay-jv-IMxwt.js",
-      "assets/replayText-BVCrT5TE.js",
-      "assets/roundRecord-B0haNVEh.js",
-      "assets/roundRecorder-DKAqqgz9.js",
-      "assets/savedDrill-DcKkDwUv.js",
-      "assets/sceneOutput-CUjHDnLM.js",
-      "assets/shotParams-C3J2Ov8H.js",
-      "assets/shotPlan-BeM2vSw1.js",
+      "assets/recordStorage-0mpPBT9D.js",
+      "assets/replayText-D4JS-X70.js",
+      "assets/replayText-gQPOzL3o.css",
+      "assets/rolldown-runtime-DK3Fl9T5.js",
+      "assets/roundRecord-B4c1VXu4.js",
+      "assets/roundRecorder-BpnprAAQ.js",
+      "assets/sceneOutput-BS5fxqUD.js",
+      "assets/shotParams-CzbzTcY3.js",
+      "assets/shotPlan-CKQc2l3h.js",
       "assets/sim-Bm1cyjHK.js",
-      "assets/sky-BeVhpgvg.js",
+      "assets/sky-C_l9aXnQ.js",
       "assets/tierRenderPath-DTyecvB6.js",
-      "assets/trainingAirframe-Cz7pIFBm.js",
+      "assets/trainingAirframe-DK4JaenJ.js",
       "assets/videoRecorder-CLJdw37K.js"
     ],
     "records.html": [
+      "assets/airframePose-CPO5fa31.js",
       "assets/browser-BktjcKxh.js",
-      "assets/buildInfo-DEWwOTVQ.js",
-      "assets/drillArchive-Cm5rkqRE.js",
+      "assets/buildInfo-D4az27LE.js",
+      "assets/drillArchive-D2quKIKf.js",
       "assets/exactMath-YJr5tnJ6.js",
       "assets/field-Fs0YcU2k.js",
-      "assets/gamepadText-hYeHPn19.js",
+      "assets/gamepadText-BCCAYV1T.js",
       "assets/modulepreload-polyfill-P2Xu9kJm.js",
       "assets/notRecorded-U8o28lkj.js",
       "assets/offlineStore-CZZIKs1B.js",
-      "assets/records-KG7SGdUd.js",
-      "assets/replayText-BVCrT5TE.js",
-      "assets/roundRecord-B0haNVEh.js",
-      "assets/savedDrill-DcKkDwUv.js",
-      "assets/shotParams-C3J2Ov8H.js",
+      "assets/recordStorage-0mpPBT9D.js",
+      "assets/records-BZtmmgZB.js",
+      "assets/replayText-D4JS-X70.js",
+      "assets/replayText-gQPOzL3o.css",
+      "assets/rolldown-runtime-DK3Fl9T5.js",
+      "assets/roundRecord-B4c1VXu4.js",
+      "assets/roundRecorder-BpnprAAQ.js",
+      "assets/shotParams-CzbzTcY3.js",
       "assets/sim-Bm1cyjHK.js",
-      "assets/trainingAirframe-Cz7pIFBm.js"
+      "assets/trainingAirframe-DK4JaenJ.js"
     ],
     "gamepad-setup.html": [
-      "assets/gamepad-setup-D3dnrAfW.js",
+      "assets/gamepad-setup-CaaU5-5a.js",
       "assets/gamepadProbe-PwRmJIUH.js",
-      "assets/gamepadSource-Dyqhi6r0.js",
-      "assets/gamepadText-hYeHPn19.js",
+      "assets/gamepadSource-CFTTkx3g.js",
+      "assets/gamepadText-BCCAYV1T.js",
       "assets/modulepreload-polyfill-P2Xu9kJm.js",
       "assets/notRecorded-U8o28lkj.js"
     ],
     "drill.html": [
       "assets/aaToggle-CmCDK7Gp.js",
-      "assets/airframe-C724vmKE.js",
+      "assets/airframe-C5hCgLqs.js",
+      "assets/airframePose-CPO5fa31.js",
       "assets/assetPack-l0ohciP4.js",
-      "assets/baselineNotice-BawW0GZR.js",
+      "assets/baselineNotice-Cj_95IAW.js",
       "assets/baselineNotice-D2F8p2Ku.css",
       "assets/basis_transcoder-VXdx5NbI.wasm",
       "assets/basis_transcoder-o4Hde_L7.js",
-      "assets/buildInfo-DEWwOTVQ.js",
+      "assets/buildInfo-D4az27LE.js",
       "assets/canvasSize-BfUx9E42.js",
-      "assets/drill-CMub3vKh.js",
-      "assets/drillArchive-Cm5rkqRE.js",
+      "assets/crown-0-BKFl00hb.png",
+      "assets/crown-1-DmBy4U3Z.png",
+      "assets/crown-2-CGdq85v6.png",
+      "assets/drill-Bijsq_t2.js",
+      "assets/drillArchive-D2quKIKf.js",
       "assets/exactMath-YJr5tnJ6.js",
-      "assets/examScene-CqGn9aDy.js",
+      "assets/examScene-ymHuXv7D.js",
       "assets/field-Fs0YcU2k.js",
       "assets/frameLock-D5gDaPEt.js",
       "assets/gamepadProbe-PwRmJIUH.js",
-      "assets/gamepadSource-Dyqhi6r0.js",
-      "assets/gamepadText-hYeHPn19.js",
+      "assets/gamepadSource-CFTTkx3g.js",
+      "assets/gamepadText-BCCAYV1T.js",
+      "assets/hexAirframeMesh-CSBfndlK.js",
       "assets/honestyNotices-BFHBd_Gd.js",
       "assets/modulepreload-polyfill-P2Xu9kJm.js",
       "assets/notRecorded-U8o28lkj.js",
       "assets/offlineStore-CZZIKs1B.js",
-      "assets/opaque-WlH6sh-T.js",
-      "assets/pavement-C3bGNABi.js",
-      "assets/replay-jv-IMxwt.js",
-      "assets/roundRecord-B0haNVEh.js",
-      "assets/roundRecorder-DKAqqgz9.js",
-      "assets/savedDrill-DcKkDwUv.js",
-      "assets/sceneOutput-CUjHDnLM.js",
-      "assets/shotParams-C3J2Ov8H.js",
+      "assets/opaque-BR0wwoFX.js",
+      "assets/recordStorage-0mpPBT9D.js",
+      "assets/rolldown-runtime-DK3Fl9T5.js",
+      "assets/roundRecord-B4c1VXu4.js",
+      "assets/roundRecorder-BpnprAAQ.js",
+      "assets/sceneOutput-BS5fxqUD.js",
+      "assets/shotParams-CzbzTcY3.js",
       "assets/sim-Bm1cyjHK.js",
-      "assets/sky-BeVhpgvg.js",
+      "assets/sky-C_l9aXnQ.js",
       "assets/tierRenderPath-DTyecvB6.js",
-      "assets/trainingAirframe-Cz7pIFBm.js"
+      "assets/trainingAirframe-DK4JaenJ.js"
     ],
     "feel.html": [
       "assets/exactMath-YJr5tnJ6.js",
-      "assets/feel-Ck7YxesP.js",
+      "assets/feel-Dsfb-WjA.js",
       "assets/feelStorage-lmMSIJzZ.js",
       "assets/modulepreload-polyfill-P2Xu9kJm.js",
-      "assets/replay-jv-IMxwt.js",
-      "assets/roundRecord-B0haNVEh.js",
-      "assets/roundRecorder-DKAqqgz9.js",
+      "assets/roundRecord-B4c1VXu4.js",
+      "assets/roundRecorder-BpnprAAQ.js",
       "assets/sim-Bm1cyjHK.js"
     ],
     "LICENSES.html": [
-      "assets/basis_transcoder-VXdx5NbI.wasm"
+      "assets/basis_transcoder-VXdx5NbI.wasm",
+      "assets/crown-0-BKFl00hb.png",
+      "assets/crown-1-DmBy4U3Z.png",
+      "assets/crown-2-CGdq85v6.png"
     ]
   },
   "assets": [

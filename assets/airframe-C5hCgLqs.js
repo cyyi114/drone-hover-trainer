@@ -1,0 +1,1 @@
+import{t as e}from"./airframePose-CPO5fa31.js";function t(t,n){t.position.set(n.x,n.y,n.z),t.quaternion.set(...e(n.yaw,n.tiltForward,n.tiltRight))}export{t};

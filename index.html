@@ -6,44 +6,47 @@
     <title>四面停懸訓練模擬器</title>
     <link rel="icon" href="data:," />
     <style>html,body{background:#101214;height:100%;margin:0;overflow:hidden}#view{width:100vw;height:100vh;display:block}#corner-info{color:#e6e8ea;pointer-events:none;background:#0000008c;border-radius:4px;grid-template-columns:max-content auto;column-gap:.75em;padding:6px 8px;font:12px/1.5 system-ui,Microsoft JhengHei,sans-serif;display:grid;position:fixed;bottom:8px;left:8px}#corner-info>div{display:contents}.corner-info-label{color:#a9b0b6}.corner-info-value[data-label=基準],.corner-info-value[data-label=離線],.corner-info-value[data-label=儲存]{max-width:40em}#loading-version{color:#a9b0b6;justify-self:center;font-size:12px}#flight-ui{pointer-events:none;color:#e6e8ea;font:13px/1.5 system-ui,Microsoft JhengHei,sans-serif;position:fixed;inset:0}.flight-panel{background:#0000008c;border-radius:4px;margin:0;padding:8px 10px;position:absolute;top:8px}.flight-status{min-width:15em;left:8px}.flight-help{box-sizing:border-box;pointer-events:auto;max-width:21em;max-height:calc(100vh - 16px);top:auto;bottom:8px;right:8px;overflow-y:auto}.flight-settings,#flight-settings-close{color:#f5f8fa;font:inherit;cursor:pointer;background:#202930;border:1px solid #68787e;border-radius:8px}.flight-settings{z-index:5;pointer-events:auto;min-height:40px;padding:0 16px;font-weight:650;position:absolute;top:12px;right:12px;box-shadow:0 2px 8px #0005}.flight-settings:before{content:"⚙";margin-right:.45em}.flight-settings[aria-expanded=true]{visibility:hidden}.flight-settings:hover,#flight-settings-close:hover{background:#35464c}html:not([data-touch=on]) #flight-settings-toggle[aria-expanded=false]+#flight-settings-panel,html[data-touch=on] :is(.flight-settings,.settings-header,.settings-display-option){display:none}html:not([data-touch=on]) #flight-settings-panel{z-index:6;color:#edf2f5;overscroll-behavior:contain;scrollbar-color:#70848c #202b31;background:#172027;border:1px solid #51616a;border-radius:12px;width:min(23rem,100vw - 24px);max-width:none;max-height:calc(100dvh - 24px);padding:0 16px 12px;scroll-padding-top:60px;font-size:14px;line-height:1.5;top:12px;bottom:auto;right:12px;box-shadow:0 8px 32px #0006}#flight-settings-panel{overflow-wrap:anywhere;overflow-x:hidden}#flight-settings-panel :is(.flight-sound-row,.flight-buttons){flex-wrap:wrap}#flight-settings-panel .flight-sound-row input{flex:6em;min-width:0;max-width:100%}#flight-settings-panel .flight-keys{grid-template-columns:max-content minmax(0,1fr)}#flight-settings-panel :is(a,button,input,summary):focus-visible,.flight-settings:focus-visible{outline-offset:2px;outline:2px solid #91dfd1}.settings-header{z-index:1;background:#172027;border-bottom:1px solid #425159;justify-content:space-between;align-items:center;padding:12px 0;display:flex;position:sticky;top:0}.settings-header h2{margin:0;font-size:18px}#flight-settings-close{padding:4px 12px}.settings-group{border-bottom:1px solid #35434b;padding:12px 0}.settings-group h3{color:#8cd9ca;margin:0 0 6px;font-size:13px}.settings-group a{color:#d2f3ee;text-underline-offset:3px}.settings-group .flight-wind{margin:5px 0}.settings-group .flight-wind-title:first-child{flex:0 0 4.2em}.settings-group .flight-wind-choice{padding:4px 7px}.settings-display-option{cursor:pointer;margin-top:8px;display:block}.settings-display-option input{accent-color:#5dceba}.settings-links{gap:5px;display:grid}.settings-guide{padding:12px 0 2px}.settings-guide summary{color:#cfdbdf;cursor:pointer;font-weight:600}.settings-guide .flight-notice{color:#c0cbd0}.settings-guide .flight-keys{margin-top:8px}#flight-settings-panel .flight-sound{border:none;margin:0;padding:0}html[data-touch=on] .settings-group:has(.settings-display-option){display:none}html:not([data-touch=on]):has(.flight-settings) #scorecard-reopen{top:auto;bottom:12px;right:12px}html[data-hide-desktop-panels]:not([data-touch=on]) :is(#corner-info,.flight-axis,.flight-round){display:none}html[data-hide-desktop-panels]:not([data-touch=on]) .flight-status:not(:has(#flight-crash:not([hidden]),#flight-teaching:not([hidden]))){display:none}.flight-round{font-variant-numeric:tabular-nums}.flight-crash{color:#f2b24c;margin-top:4px;font-weight:600}.flight-crash[hidden]{display:none}.flight-honesty{border-top:1px solid #ffffff24;max-width:24em;margin-top:6px;padding-top:4px}.flight-wind{flex-wrap:wrap;align-items:center;gap:4px;display:flex}.flight-wind-title{color:#a9b0b6}.flight-wind-choice{pointer-events:auto;color:inherit;font:inherit;cursor:pointer;background:#1b1f22;border:1px solid #5b646b;border-radius:4px;padding:2px 6px}.flight-wind-choice:hover:not(:disabled){background:#232a2d;border-color:#2bb3a3}.flight-wind-choice[aria-pressed=true]{background:#1f4a46;border-color:#2bb3a3}.flight-wind-choice:disabled{opacity:.45;cursor:not-allowed}.flight-axis{grid-template-columns:2.5em 1fr 3.2em;align-items:center;column-gap:.6em;display:grid}.flight-axis-label,.flight-keys dt,.flight-round{color:#a9b0b6}.flight-axis-track{background:linear-gradient(90deg,#0000 calc(50% - .5px),#a9b0b6 calc(50% - .5px) calc(50% + .5px),#0000 calc(50% + .5px)),#ffffff24;border-radius:3px;height:6px;position:relative}.flight-axis-fill{background:#2bb3a3;border-radius:3px;position:absolute;top:0;bottom:0}.flight-axis-value{text-align:right;font-variant-numeric:tabular-nums}.flight-keys{grid-template-columns:max-content auto;column-gap:.75em;margin:0;display:grid}.flight-keys dd{margin:0}.flight-notice,.flight-said{margin:6px 0 0}#flight-said:not(:empty){box-sizing:border-box;overflow-wrap:anywhere;background:#172027ed;border-radius:6px;width:max-content;max-width:min(36em,100vw - 24px);margin:0;padding:6px 12px;position:absolute;bottom:12px;left:50%;transform:translate(-50%)}.flight-said:empty{display:none}.flight-buttons{gap:6px;margin-top:8px;display:flex}.flight-buttons button{pointer-events:auto;color:inherit;font:inherit;cursor:pointer;background:#1b1f22;border:1px solid #5b646b;border-radius:4px;padding:4px 10px}.flight-buttons button:hover{background:#232a2d;border-color:#2bb3a3}.flight-pause{text-align:center;background:#000000b8;border-radius:6px;padding:14px 22px;position:absolute;top:38%;left:50%;transform:translate(-50%,-50%)}.flight-pause h2{margin:0 0 4px;font-size:20px;font-weight:600}.flight-pause p{margin:0}#loading-notice{color:#e6e8ea;background:#101214;place-content:center;font:15px/1.6 system-ui,Microsoft JhengHei,sans-serif;display:grid;position:fixed;inset:0}#loading-notice:after{content:"";background:linear-gradient(90deg,#0000,#2bb3a3,#0000) 0 0/50% 100% no-repeat,#ffffff1f;border-radius:2px;justify-self:center;width:9em;height:3px;margin-top:10px;animation:1.2s linear infinite loading-sweep}@keyframes loading-sweep{0%{background-position:-100% 0,0 0}to{background-position:200% 0,0 0}}body.shot #corner-info{display:none}</style>
-    <script type="module" crossorigin src="./assets/index-DohQjl0z.js"></script>
+    <script type="module" crossorigin src="./assets/index-Bm5zum5i.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-P2Xu9kJm.js">
     <link rel="modulepreload" crossorigin href="./assets/exactMath-YJr5tnJ6.js">
     <link rel="modulepreload" crossorigin href="./assets/sim-Bm1cyjHK.js">
     <link rel="modulepreload" crossorigin href="./assets/aaToggle-CmCDK7Gp.js">
     <link rel="modulepreload" crossorigin href="./assets/tierRenderPath-DTyecvB6.js">
     <link rel="modulepreload" crossorigin href="./assets/field-Fs0YcU2k.js">
-    <link rel="modulepreload" crossorigin href="./assets/roundRecord-B0haNVEh.js">
+    <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-DK3Fl9T5.js">
+    <link rel="modulepreload" crossorigin href="./assets/roundRecord-B4c1VXu4.js">
+    <link rel="modulepreload" crossorigin href="./assets/roundRecorder-BpnprAAQ.js">
     <link rel="modulepreload" crossorigin href="./assets/offlineStore-CZZIKs1B.js">
-    <link rel="modulepreload" crossorigin href="./assets/savedDrill-DcKkDwUv.js">
-    <link rel="modulepreload" crossorigin href="./assets/shotParams-C3J2Ov8H.js">
-    <link rel="modulepreload" crossorigin href="./assets/opaque-WlH6sh-T.js">
-    <link rel="modulepreload" crossorigin href="./assets/airframe-C724vmKE.js">
-    <link rel="modulepreload" crossorigin href="./assets/trainingAirframe-Cz7pIFBm.js">
-    <link rel="modulepreload" crossorigin href="./assets/sky-BeVhpgvg.js">
-    <link rel="modulepreload" crossorigin href="./assets/pavement-C3bGNABi.js">
-    <link rel="modulepreload" crossorigin href="./assets/sceneOutput-CUjHDnLM.js">
-    <link rel="modulepreload" crossorigin href="./assets/examScene-CqGn9aDy.js">
-    <link rel="modulepreload" crossorigin href="./assets/gamepadText-hYeHPn19.js">
-    <link rel="modulepreload" crossorigin href="./assets/replay-jv-IMxwt.js">
-    <link rel="modulepreload" crossorigin href="./assets/roundRecorder-DKAqqgz9.js">
+    <link rel="modulepreload" crossorigin href="./assets/recordStorage-0mpPBT9D.js">
+    <link rel="modulepreload" crossorigin href="./assets/shotParams-CzbzTcY3.js">
+    <link rel="modulepreload" crossorigin href="./assets/airframePose-CPO5fa31.js">
+    <link rel="modulepreload" crossorigin href="./assets/trainingAirframe-DK4JaenJ.js">
+    <link rel="modulepreload" crossorigin href="./assets/gamepadText-BCCAYV1T.js">
     <link rel="modulepreload" crossorigin href="./assets/notRecorded-U8o28lkj.js">
+    <link rel="modulepreload" crossorigin href="./assets/opaque-BR0wwoFX.js">
+    <link rel="modulepreload" crossorigin href="./assets/airframe-C5hCgLqs.js">
+    <link rel="modulepreload" crossorigin href="./assets/sky-C_l9aXnQ.js">
+    <link rel="modulepreload" crossorigin href="./assets/hexAirframeMesh-CSBfndlK.js">
+    <link rel="modulepreload" crossorigin href="./assets/sceneOutput-BS5fxqUD.js">
+    <link rel="modulepreload" crossorigin href="./assets/examScene-ymHuXv7D.js">
     <link rel="modulepreload" crossorigin href="./assets/assetPack-l0ohciP4.js">
-    <link rel="modulepreload" crossorigin href="./assets/baselineNotice-BawW0GZR.js">
-    <link rel="modulepreload" crossorigin href="./assets/buildInfo-DEWwOTVQ.js">
+    <link rel="modulepreload" crossorigin href="./assets/baselineNotice-Cj_95IAW.js">
+    <link rel="modulepreload" crossorigin href="./assets/replayText-D4JS-X70.js">
+    <link rel="modulepreload" crossorigin href="./assets/buildInfo-D4az27LE.js">
     <link rel="modulepreload" crossorigin href="./assets/feelStorage-lmMSIJzZ.js">
     <link rel="modulepreload" crossorigin href="./assets/browser-BktjcKxh.js">
     <link rel="modulepreload" crossorigin href="./assets/honestyNotices-BFHBd_Gd.js">
-    <link rel="modulepreload" crossorigin href="./assets/replayText-BVCrT5TE.js">
     <link rel="modulepreload" crossorigin href="./assets/gamepadProbe-PwRmJIUH.js">
-    <link rel="modulepreload" crossorigin href="./assets/gamepadSource-Dyqhi6r0.js">
+    <link rel="modulepreload" crossorigin href="./assets/gamepadSource-CFTTkx3g.js">
     <link rel="modulepreload" crossorigin href="./assets/canvasSize-BfUx9E42.js">
     <link rel="modulepreload" crossorigin href="./assets/frameLock-D5gDaPEt.js">
     <link rel="modulepreload" crossorigin href="./assets/readCanvas-B64av70t.js">
-    <link rel="modulepreload" crossorigin href="./assets/shotPlan-BeM2vSw1.js">
+    <link rel="modulepreload" crossorigin href="./assets/shotPlan-CKQc2l3h.js">
     <link rel="modulepreload" crossorigin href="./assets/consoleCapture-CGtWRzT-.js">
     <link rel="modulepreload" crossorigin href="./assets/videoRecorder-CLJdw37K.js">
     <link rel="stylesheet" crossorigin href="./assets/baselineNotice-D2F8p2Ku.css">
+    <link rel="stylesheet" crossorigin href="./assets/replayText-gQPOzL3o.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-dxLLeB-_.css">
   </head>
   <body>
     <canvas id="view"></canvas>

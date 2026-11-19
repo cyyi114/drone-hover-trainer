@@ -1,0 +1,1 @@
+function e(e,t,n){let r=(e,t)=>e+(t-e)*n;return{x:r(e.x,t.x),y:r(e.y,t.y),z:r(e.z,t.z),yaw:r(e.yaw,t.yaw),tiltForward:r(e.tiltForward,t.tiltForward),tiltRight:r(e.tiltRight,t.tiltRight)}}function t(e,t,n){let r=Math.hypot(t,n),i=r/2,a=r===0?0:Math.sin(i)/r,o=-t*a,s=n*a,c=Math.cos(i),l=Math.sin(-e/2),u=Math.cos(-e/2);return[u*o-l*s,u*s+l*o,l*c,u*c]}export{e as n,t};
