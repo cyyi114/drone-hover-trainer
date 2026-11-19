@@ -1,15 +1,15 @@
 {
   "formatVersion": 1,
-  "version": "0.0.0+d1bc58b",
-  "sourceCommit": "d1bc58b51c6aa75a8c27eef20f8d7073abbb9b38",
-  "builtAt": "2026-11-19T02:59:13.625Z",
+  "version": "0.0.0+24c4762",
+  "sourceCommit": "24c4762701c9edba3ad1d34886fb51120a1c037f",
+  "builtAt": "2026-11-19T08:21:35.458Z",
   "dropRejectedBackdrops": true,
   "droppedBackdrops": [
     "hausdorf-clear",
     "suburban-field"
   ],
   "fileCount": 84,
-  "totalBytes": 124337403,
+  "totalBytes": 124343251,
   "files": [
     {
       "path": ".nojekyll",
@@ -24,12 +24,12 @@
     {
       "path": "LICENSES.html",
       "bytes": 5888,
-      "sha256": "baa3e1e63238fe26bc7f7eee68520491b778c1fc530f2be1298f11e41dd8d651"
+      "sha256": "650a2e2514286f8c03abb76bdd8f7fb1c4c1db7394e744fee254b650b60ddee6"
     },
     {
       "path": "README.md",
       "bytes": 527,
-      "sha256": "2a3a45a62142098b51003771880795942aaf1ab7908e15e13a9336f8b34eca23"
+      "sha256": "9b28cc7f90b317d8a19ee4a8a626892b2b9284b394809c2dddb1e12f8cea365f"
     },
     {
       "path": "airframe/generic-hex-1.glb",
@@ -57,14 +57,14 @@
       "sha256": "cbff75692309f4781cef69a96810f3c01cccb5685e65c072d49e15490f8e3aab"
     },
     {
+      "path": "assets/baselineNotice-ClC64chY.js",
+      "bytes": 16489,
+      "sha256": "469f8bca4db5a77fa30bec9432eea95a4bce8a693f210a7fe14db42d72fa5283"
+    },
+    {
       "path": "assets/baselineNotice-D2F8p2Ku.css",
       "bytes": 2835,
       "sha256": "1a626b399f5ae0c375937707c705dd406064919248cc2c375069594bf1d1733a"
-    },
-    {
-      "path": "assets/baselineNotice-Dx3YPVov.js",
-      "bytes": 16489,
-      "sha256": "4350d98a2aafbf2c47663a55f32627db851d59bfc38767afecdf27a9fc9bebcb"
     },
     {
       "path": "assets/basis_transcoder-VXdx5NbI.wasm",
@@ -82,9 +82,9 @@
       "sha256": "d860d9ff8d61d4f4ff8dbfa810540dfc174dfc3f34abd22084f34ecbe304545f"
     },
     {
-      "path": "assets/buildInfo-QqdL6aGz.js",
+      "path": "assets/buildInfo-BI6yUZH-.js",
       "bytes": 37,
-      "sha256": "3102e33f27e028942ef2525c907ffefd871eba180cea49eecdaee45fd8c3a952"
+      "sha256": "2ed3c2b7fe44472dc5463e04021ef766719e2300335903c6f449ceac3580aff0"
     },
     {
       "path": "assets/canvasSize-BfUx9E42.js",
@@ -97,14 +97,14 @@
       "sha256": "08df22f4696080e3ec7721abea253e40b0d479e49fa797c52133e20b36fcc0ed"
     },
     {
-      "path": "assets/drill-Dl7F0CZ_.js",
-      "bytes": 22071,
-      "sha256": "85cf683f09a25efeafde5faf30d47dbb568f30065fa7b5abaf194db795645b4c"
+      "path": "assets/drill-B0N0yVcm.js",
+      "bytes": 21955,
+      "sha256": "8569c8f47a4f379450b80fc2656dd6c549f215285a77acf83d171d0ac3aeda97"
     },
     {
-      "path": "assets/drillArchive-GoKN7Lw6.js",
+      "path": "assets/drillArchive-DOWcYZL3.js",
       "bytes": 939,
-      "sha256": "165bdb6e68c4e8711034ef8501a4842d3c0281faf4ad6a1889466cd6b6dd0689"
+      "sha256": "5d0f15912c4dbd4b4ba8fcd8f79b3a76a992519defcd2dd251b79e0b5be3db21"
     },
     {
       "path": "assets/exactMath-YJr5tnJ6.js",
@@ -112,9 +112,9 @@
       "sha256": "dfc85af1ba3c55ff4753bcacf2f03de968f0cdac5bb5ecbbff497b2aa4b847e6"
     },
     {
-      "path": "assets/examScene-BxkcL9rX.js",
-      "bytes": 20149,
-      "sha256": "3123f1aed561be7d9990c1dad3604c4565e1a6c90387f1f0e5de5005e801b922"
+      "path": "assets/examScene-C8fAHKgO.js",
+      "bytes": 20199,
+      "sha256": "f08182f7e52dc8d64a6f46994fd009fd341ad66c73bd7cdc15deb99a4a3f5fba"
     },
     {
       "path": "assets/feel-Bij6PbD1.js",
@@ -127,9 +127,9 @@
       "sha256": "2acc8f426844666dc0d1429d6bd763f75ba63c2156dd1b4d8969a02daeff606b"
     },
     {
-      "path": "assets/field-5Ba68lkn.js",
-      "bytes": 2749,
-      "sha256": "a176212fb93f283b9a71f71a21d8c9630989e1dac518ac92672bddd5c6bd3403"
+      "path": "assets/field-Fs0YcU2k.js",
+      "bytes": 2761,
+      "sha256": "5afd841e74d6ed27f2ed7e8315270314d258246133324575f902fa07abe2aea1"
     },
     {
       "path": "assets/flightSoundWorklet-B_vXIq2w.js",
@@ -142,9 +142,9 @@
       "sha256": "27d0665ebf8072ec3d43b8338c853267eb659c19f4c1c988f434fe7d23ba2c64"
     },
     {
-      "path": "assets/gamepad-setup-lrawv3XI.js",
-      "bytes": 5616,
-      "sha256": "3fc4188193e8bc1fb3b26547ba3a9004fe1b3e95728282cb4c19584dc8821c8b"
+      "path": "assets/gamepad-setup-BdMh-IT6.js",
+      "bytes": 6006,
+      "sha256": "cdd76e8e847b7a11e0973fc7fbe8843214cccabd028209900ac8039151d62eba"
     },
     {
       "path": "assets/gamepadProbe-PwRmJIUH.js",
@@ -152,19 +152,19 @@
       "sha256": "deb07de223ed3e10d91ca714fb8a5d02f40c69953f2207e31a0cf8b224b75db7"
     },
     {
-      "path": "assets/gamepadSource-BhQjnkhK.js",
+      "path": "assets/gamepadSource-iPelOZo2.js",
       "bytes": 1008,
-      "sha256": "2585531c40449607bef9abdeb12bc36c5903cf07430a4c8a28d3685a717bbf3e"
+      "sha256": "86a114fb078fec8a100e9677f9447483b608d776a111af9cdb5f0c853474759c"
     },
     {
-      "path": "assets/gamepadText-DDipZGzQ.js",
-      "bytes": 7501,
-      "sha256": "4a438a85010aecb1dbd3027c7bcc2ab089b5a0841ea427033615d59be114d2ee"
+      "path": "assets/gamepadText-BvtZ80yg.js",
+      "bytes": 7893,
+      "sha256": "47ae6a7731ed7e64179f6b6cbed040f072309ebe2ccb62e73af8fe5e62598a85"
     },
     {
-      "path": "assets/index-BFoGrecX.js",
-      "bytes": 62717,
-      "sha256": "e270608c3758bddce2ed6f7673cbbb95e6f8939b444bfb72897e5d8d470fb1ea"
+      "path": "assets/index-BZ-VbkK8.js",
+      "bytes": 63835,
+      "sha256": "a06584669e3e21cb00e494a2322b04e09b5efa6db1e4944055d28f2a70580566"
     },
     {
       "path": "assets/modulepreload-polyfill-P2Xu9kJm.js",
@@ -187,9 +187,9 @@
       "sha256": "7fbe7187c267fd041b1407fc0a35079fa30c37f2686ab423d2dad45739279cad"
     },
     {
-      "path": "assets/pavement-jE6aqfq1.js",
+      "path": "assets/pavement-C9r5qNX0.js",
       "bytes": 37055,
-      "sha256": "3dd38dbf113abd93477c2cfb87857d305a6d20d30cf6bd8a5c244af58d1fd18c"
+      "sha256": "e12885588b9ff3a8b3a90efcf6930936d749eeabcd9aaa1bcd05a12243928a89"
     },
     {
       "path": "assets/readCanvas-B64av70t.js",
@@ -197,9 +197,9 @@
       "sha256": "dae5613d0bd3f7be1612a03e08dec73249047233f045335586b814b92ce04d3d"
     },
     {
-      "path": "assets/records-DKg7jh-J.js",
+      "path": "assets/records-DIE71MkY.js",
       "bytes": 7624,
-      "sha256": "83a34d20a4040f1978154668411538fa6445e49887021fbf409e9e9c8219db49"
+      "sha256": "dd19b6fbdeb58c54d315331c94057c30f5d4820d6e8c8eef0ad77e650881d3e4"
     },
     {
       "path": "assets/replay-CuYm60EA.js",
@@ -207,9 +207,9 @@
       "sha256": "b60ff9aed65aed644c40fb2932565314f66c85609fce65872dd8c7b100611040"
     },
     {
-      "path": "assets/replayText-DumDRD41.js",
-      "bytes": 38949,
-      "sha256": "be2f302bddd0e84e17cfd8aea651841973bcce8ed753a78b45d07757ea898d93"
+      "path": "assets/replayText-CtQz6maS.js",
+      "bytes": 40701,
+      "sha256": "f635b4481abda21711ce85313d35d5df599b9a80ab67ff9dc9fcf4eb0dac4087"
     },
     {
       "path": "assets/roundRecord-CIROd4TO.js",
@@ -222,9 +222,9 @@
       "sha256": "ff88f1effe7c7b1a15177c6358c1a208db6fb13e37551fce70e816257d010e39"
     },
     {
-      "path": "assets/savedDrill-CL8UOd6f.js",
-      "bytes": 28399,
-      "sha256": "4c3770fa59f87d001535de15aed9c68ac094ea3204942f283b7040025f13cb5c"
+      "path": "assets/savedDrill-CED8I_-G.js",
+      "bytes": 29366,
+      "sha256": "f3d2ab558ba37ce822445e2be4ee44b4ec164efeca28ba8a230ca253b54a5b93"
     },
     {
       "path": "assets/sceneOutput-CqeMyVQQ.js",
@@ -252,9 +252,9 @@
       "sha256": "470ed119d6dafa8898b8d4d6ae3198548fbc5191d17136aeff998243c327c5f3"
     },
     {
-      "path": "assets/smoke-BYdi39IG.js",
+      "path": "assets/smoke-DdRD3Wcr.js",
       "bytes": 40067,
-      "sha256": "f3deb10a9895811fac6a389e20f98905917944d3601a99134edc16054411d473"
+      "sha256": "868aed9f7f67b7a4bc9ed83f6709aa45961a74f7e662d224747be3248dfad70c"
     },
     {
       "path": "assets/srgb-BYLCyAwo.js",
@@ -279,7 +279,7 @@
     {
       "path": "drill.html",
       "bytes": 3970,
-      "sha256": "39dd531c0f8a6105f4368df914b33b588ee107240af9aa2f554b6be4fbe754fd"
+      "sha256": "a9720f3ac2f28ee8dbb31253f92b386c86ab12b621e23a1608d1a6fa508a6ad7"
     },
     {
       "path": "feel.html",
@@ -323,18 +323,18 @@
     },
     {
       "path": "gamepad-setup.html",
-      "bytes": 4786,
-      "sha256": "908a404522c4b8c45fe84242b7fa91107de3de39087cc157399f5a10b1a1664f"
+      "bytes": 5368,
+      "sha256": "70b699a3cc57f31b60b2cb09528f12a4d0c4c4ba9cebb1c263898e89be28d124"
     },
     {
       "path": "index.html",
-      "bytes": 6904,
-      "sha256": "63b5cb226173db19b050341272429d4b21eb8d8c83bb8b527ff825660bf1c4f2"
+      "bytes": 7605,
+      "sha256": "3b51de4abc008de3358fd2da8a1ca3b3ced8fee4189d1ced91789e7e93414aaa"
     },
     {
       "path": "offline-manifest.json",
       "bytes": 17339,
-      "sha256": "601864085a89cf069eb0e9616ea7cd7b5dec93f898386fcacdb6c4c4f3d0d015"
+      "sha256": "67233507d2f61a357e4be1d8586f4f5af73fdb4fe4911b0c2ea5e5f3b9229a55"
     },
     {
       "path": "offline-probe/sample/je_gray_park_2k.ktx2",
@@ -349,7 +349,7 @@
     {
       "path": "records.html",
       "bytes": 6390,
-      "sha256": "fb36611622a22973c812701f5044a967ecb3df53d6876a63e5160ad3fd3ef4a7"
+      "sha256": "1b4640489da48d9dd4cb55e8618100e41dcfe3820be27833fd32dc63856e9fea"
     },
     {
       "path": "sky/farmland-overcast/dome.ktx2",
@@ -414,7 +414,7 @@
     {
       "path": "smoke.html",
       "bytes": 4382,
-      "sha256": "f1ca29b884699404023e8c5d88530dc0b66470f3fc046ec11a36c65785f81842"
+      "sha256": "5acda03e199fe25007bf04dd2e80a4358d68337650a4594688e1ace13512b9cc"
     },
     {
       "path": "smoke/quadrants.ktx2",
@@ -429,7 +429,7 @@
     {
       "path": "sw.js",
       "bytes": 6954,
-      "sha256": "d174c59bc95ec4efcf7bc89dfde731e00dff14e3def959472a5fd0c24098dc97"
+      "sha256": "50359e2b932fca6e1d0005833e0bed8c404f4b87cb86d4d0c64e1fca33fb6bad"
     }
   ]
 }
